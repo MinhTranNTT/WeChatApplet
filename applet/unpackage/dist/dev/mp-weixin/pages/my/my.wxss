@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+page {
+  background-color: #FAFAFA;
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  width: 674rpx;
+  background-color: #0053B8;
+  margin: 20rpx 38rpx 20rpx 38rpx;
+  border-radius: 20rpx;
+  box-shadow: #A59F9F 5px 5px 5px;
+  align-items: center;
+}
+.user-info .avatar button {
+  background-color: #0053B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+.user-info .avatar image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
+}
+.user-info .nickname {
+  color: #cccfcc;
+  margin-left: 20rpx;
+}
+.user-info .nickname .show-nickname {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.user-info .uni-icons {
+  display: flex;
+  align-items: center;
+  margin: auto 0 auto auto;
+  width: 180rpx;
+  height: 100%;
+}
+.user-info .uni-icons uni-icons {
+  margin-left: 100rpx;
+}
+.order-camper {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 674rpx;
+  background-color: #fff;
+  margin: 20rpx 38rpx 20rpx 38rpx;
+  border-radius: 15rpx;
+  box-shadow: #E7E2E2 5px 5px 5px;
+  align-items: center;
+}
+.order-camper .title {
+  margin: 10rpx 0 10rpx 20rpx;
+  font-weight: bold;
+}
+.order-camper .subtitle {
+  display: flex;
+  flex-direction: row;
+  margin: auto 20rpx auto auto;
+}
+.order-camper .subtitle .subt {
+  color: #ACACAC;
+  font-size: 28rpx;
+  margin-right: 10rpx;
+}
+#order {
+  margin-top: 40rpx;
+}
+.tools-service {
+  display: flex;
+  flex-direction: column;
+  width: 674rpx;
+  background-color: #fff;
+  margin: 20rpx 38rpx 20rpx 38rpx;
+  border-radius: 15rpx;
+  box-shadow: #E7E2E2 5px 5px 5px;
+}
+.tools-service .title-name {
+  margin: 20rpx 0 20rpx 20rpx;
+  font-weight: bold;
+}
+.tools-service .tools {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 20rpx 20rpx 20rpx;
+}
+.tools-service .tools button {
+  border: none;
+}
+.tools-service .tools .tools-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20rpx 30rpx 20rpx 30rpx;
+}
+.tools-service .tools .tools-item image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.tools-service .tools .tools-item .name {
+  font-size: 23rpx;
+}
+

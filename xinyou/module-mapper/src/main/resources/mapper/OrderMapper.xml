@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zw.mapper.OrderMapper">
+
+    <resultMap id="BaseResultMap" type="com.zw.common.domain.Order">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="openid" column="openid" jdbcType="VARCHAR"/>
+            <result property="sn" column="sn" jdbcType="VARCHAR"/>
+            <result property="orderType" column="order_type" jdbcType="INTEGER"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="cancelType" column="cancel_type" jdbcType="INTEGER"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="payTime" column="pay_time" jdbcType="TIMESTAMP"/>
+            <result property="finishTime" column="finish_time" jdbcType="TIMESTAMP"/>
+            <result property="calcelTime" column="calcel_time" jdbcType="TIMESTAMP"/>
+            <result property="productId" column="product_id" jdbcType="INTEGER"/>
+            <result property="productName" column="product_name" jdbcType="VARCHAR"/>
+            <result property="productImage" column="product_image" jdbcType="VARCHAR"/>
+            <result property="registerLocation" column="register_location" jdbcType="VARCHAR"/>
+            <result property="returnLocation" column="return_location" jdbcType="VARCHAR"/>
+            <result property="camperInfo" column="camper_info" jdbcType="JAVA_OBJECT"
+                    javaType="com.alibaba.fastjson.JSONObject"
+                    typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+            <result property="productCount" column="product_count" jdbcType="INTEGER"/>
+            <result property="camperList" column="camper_list" jdbcType="JAVA_OBJECT"
+                    javaType="com.alibaba.fastjson.JSONArray"
+                    typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+            <result property="originalPrice" column="original_price" jdbcType="INTEGER"/>
+            <result property="promotionPrice" column="promotion_price" jdbcType="INTEGER"/>
+            <result property="couponId" column="coupon_id" jdbcType="INTEGER"/>
+            <result property="payPrice" column="pay_price" jdbcType="INTEGER"/>
+            <result property="payOrderId" column="pay_order_id" jdbcType="VARCHAR"/>
+            <result property="refundStatus" column="refund_status" jdbcType="INTEGER"/>
+            <result property="refundPrice" column="refund_price" jdbcType="INTEGER"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,openid,sn,
+        order_type,status,cancel_type,
+        create_time,pay_time,finish_time,
+        calcel_time,product_id,product_name,
+        product_image,register_location,return_location,
+        camper_info,product_count,camper_list,
+        original_price,promotion_price,
+        coupon_id,pay_price,
+        pay_order_id,refund_status,refund_price,
+        is_delete
+    </sql>
+    <update id="updateBySn">
+        update mall_order
+        <set>
+            <if test="orderType != null">order_type = #{orderType,jdbcType=INTEGER},</if>
+            <if test="status != null">status = #{status,jdbcType=INTEGER},</if>
+            <if test="cancelType != null">cancel_type = #{cancelType,jdbcType=INTEGER},</if>
+            <if test="createTime != null">create_time = #{createTime,jdbcType=TIMESTAMP},</if>
+            <if test="payTime != null">pay_time = #{payTime,jdbcType=TIMESTAMP},</if>
+            <if test="finishTime != null">finish_time = #{finishTime,jdbcType=TIMESTAMP},</if>
+            <if test="calcelTime != null">calcel_time = #{calcelTime,jdbcType=TIMESTAMP},</if>
+            <if test="productId != null">product_id = #{productId,jdbcType=INTEGER},</if>
+            <if test="productName != null">product_name = #{productName,jdbcType=VARCHAR},</if>
+            <if test="productImage != null">product_image = #{productImage,jdbcType=VARCHAR},</if>
+            <if test="registerLocation != null">register_location = #{registerLocation,jdbcType=VARCHAR},</if>
+            <if test="returnLocation != null">return_location = #{returnLocation,jdbcType=VARCHAR},</if>
+            <if test="camperInfo != null">camper_info = #{camperInfo,jdbcType=JAVA_OBJECT},</if>
+            <if test="productCount != null">product_count = #{productCount,jdbcType=INTEGER},</if>
+            <if test="camperList != null">camper_list = #{camperList,jdbcType=JAVA_OBJECT},</if>
+            <if test="originalPrice != null">original_price = #{originalPrice,jdbcType=INTEGER},</if>
+            <if test="promotionPrice != null">promotion_price = #{promotionPrice,jdbcType=INTEGER},</if>
+            <if test="couponId != null">coupon_id = #{couponId,jdbcType=INTEGER},</if>
+            <if test="payPrice != null">pay_price = #{payPrice,jdbcType=INTEGER},</if>
+            <if test="payOrderId != null">pay_order_id = #{payOrderId,jdbcType=VARCHAR},</if>
+            <if test="refundStatus != null">refund_status = #{refundStatus,jdbcType=INTEGER},</if>
+            <if test="refundPrice != null">refund_price = #{refundPrice,jdbcType=INTEGER},</if>
+            <if test="isDelete != null">isDelete = #{isDelete,jdbcType=INTEGER},</if>
+        </set>
+        where sn = #{sn,jdbcType=VARCHAR}
+    </update>
+    <select id="getAllByStatusAndOpenid" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where
+        status = #{status,jdbcType=NUMERIC}
+        AND openid = #{openid,jdbcType=VARCHAR}
+    </select>
+    <select id="getAllByOpenid" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where
+        openid = #{openid,jdbcType=VARCHAR}
+        order by create_time desc
+    </select>
+    <select id="getOneBySn" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where
+        sn = #{sn,jdbcType=NUMERIC}
+    </select>
+    <select id="getByStatus" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where
+        status = #{status,jdbcType=NUMERIC}
+    </select>
+    <select id="getAllByOpenidOrderByCreateTimeDesc" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        where
+        openid = #{openid,jdbcType=VARCHAR}
+        order by create_time desc
+    </select>
+
+</mapper>

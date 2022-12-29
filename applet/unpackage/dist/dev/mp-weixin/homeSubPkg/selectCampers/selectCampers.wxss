@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.tips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 160rpx;
+  background-color: #ffffff;
+}
+.tips .tip-text {
+  margin-left: 30rpx;
+}
+.tips .tip-text #one {
+  margin: 10rpx 0 10rpx 0;
+}
+.tips .add-btn {
+  background-color: #22AC38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: auto;
+  margin-right: 70rpx;
+  border-radius: 10rpx;
+  box-shadow: #ccc 5rpx 5rpx 5rpx;
+}
+.tips .add-btn image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.tips .add-btn .text {
+  font-size: 25rpx;
+  color: #FEFFFE;
+  margin-bottom: 10rpx;
+}
+.camper-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30rpx 0 30rpx 0;
+  justify-content: center;
+  align-items: center;
+}
+.camper-list .camper-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10rpx;
+  height: 140rpx;
+  width: 90%;
+  margin: 20rpx 0 10rpx 0;
+  align-items: center;
+}
+.camper-list .camper-item .navigator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 540rpx;
+}
+.camper-list .camper-item .navigator uni-icons {
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+.camper-list .camper-item .navigator .name-gender-idcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.camper-list .camper-item .navigator .name-gender-idcard .name-gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+}
+.camper-list .camper-item .navigator .name-gender-idcard .name-gender image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.camper-list .camper-item .navigator .name-gender-idcard .name-gender .name {
+  width: 120rpx;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.camper-list .camper-item .navigator .name-gender-idcard .idcard {
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #999999;
+}
+.camper-list .camper-item .checkbox {
+  margin-left: auto;
+  margin-right: 45rpx;
+}
+.confirm-cancle {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  align-items: center;
+  background-color: #ffffff;
+}
+.confirm-cancle button {
+  font-size: 28rpx;
+  border: #1AAD19 0.5px solid;
+}
+.confirm-cancle .cancle {
+  width: 200rpx;
+  margin-left: 40rpx;
+  margin-right: auto;
+  color: #1AAD19;
+}
+.confirm-cancle .complite {
+  width: 400rpx;
+  margin-left: auto;
+  margin-right: 40rpx;
+}
+

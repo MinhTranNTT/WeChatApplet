@@ -1,0 +1,12 @@
+2022-12-20 22:49:05,724 [32m INFO[0;39m --- [            main] [36mcom.zw.api.ApiApplication               [0;39m : Starting ApiApplication using Java 1.8.0_351 on anking with PID 47016 (C:\Data\ZW\xinyou\module-api\target\classes started by aking in C:\Data\ZW\xinyou) 
+2022-12-20 22:49:05,727 [32m INFO[0;39m --- [            main] [36mcom.zw.api.ApiApplication               [0;39m : The following 2 profiles are active: "commonDev", "dev" 
+2022-12-20 22:49:06,297 [32m INFO[0;39m --- [            main] [36my.config.RepositoryConfigurationDelegate[0;39m : Multiple Spring Data modules found, entering strict repository configuration mode 
+2022-12-20 22:49:06,298 [32m INFO[0;39m --- [            main] [36my.config.RepositoryConfigurationDelegate[0;39m : Bootstrapping Spring Data Redis repositories in DEFAULT mode. 
+2022-12-20 22:49:06,319 [32m INFO[0;39m --- [            main] [36my.config.RepositoryConfigurationDelegate[0;39m : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces. 
+2022-12-20 22:49:06,761 [32m INFO[0;39m --- [            main] [36mboot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 80 (http) 
+2022-12-20 22:49:06,768 [32m INFO[0;39m --- [            main] [36morg.apache.catalina.core.StandardService[0;39m : Starting service [Tomcat] 
+2022-12-20 22:49:06,768 [32m INFO[0;39m --- [            main] [36morg.apache.catalina.core.StandardEngine [0;39m : Starting Servlet engine: [Apache Tomcat/9.0.68] 
+2022-12-20 22:49:06,894 [32m INFO[0;39m --- [            main] [36me.ContainerBase.[Tomcat].[localhost].[/][0;39m : Initializing Spring embedded WebApplicationContext 
+2022-12-20 22:49:06,894 [32m INFO[0;39m --- [            main] [36mntext.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 1120 ms 
+2022-12-20 22:49:08,182 [32m INFO[0;39m --- [            main] [36mboot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat started on port(s): 80 (http) with context path '' 
+2022-12-20 22:49:08,191 [32m INFO[0;39m --- [            main] [36mcom.zw.api.ApiApplication               [0;39m : Started ApiApplication in 2.911 seconds (JVM running for 3.534) 

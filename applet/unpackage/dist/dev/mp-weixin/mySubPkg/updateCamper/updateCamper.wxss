@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+.title {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  width: 674rpx;
+  justify-content: center;
+  margin: 0 38rpx 0 38rpx;
+  border-bottom: #999999 solid 1px;
+  align-items: center;
+}
+.title .main-title {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.title .sub-title {
+  display: flex;
+  flex-direction: row;
+  height: 45rpx;
+  align-items: flex-end;
+}
+.title .sub-title #one {
+  font-size: 25rpx;
+  color: #999999;
+}
+.title .sub-title #two {
+  -webkit-columns: #ff3b3b;
+          columns: #ff3b3b;
+  font-size: 25rpx;
+}
+.form-data {
+  width: 674rpx;
+  margin: 30rpx 38rpx 30rpx 38rpx;
+}
+.empty-area {
+  height: 100rpx;
+}
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="generator.mapper.CouponMapper">
+
+    <resultMap id="BaseResultMap" type="generator.domain.Coupon">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="couponType" column="coupon_type" jdbcType="INTEGER"/>
+            <result property="couponName" column="coupon_name" jdbcType="VARCHAR"/>
+            <result property="couponCode" column="coupon_code" jdbcType="VARCHAR"/>
+            <result property="userOpenid" column="user_openid" jdbcType="VARCHAR"/>
+            <result property="useOrderSn" column="use_order_sn" jdbcType="VARCHAR"/>
+            <result property="goodsType" column="goods_type" jdbcType="OTHER"/>
+            <result property="goodsIds" column="goods_ids" jdbcType="VARCHAR"/>
+            <result property="atLeast" column="at_least" jdbcType="DECIMAL"/>
+            <result property="money" column="money" jdbcType="DECIMAL"/>
+            <result property="discount" column="discount" jdbcType="DECIMAL"/>
+            <result property="discountLimit" column="discount_limit" jdbcType="DECIMAL"/>
+            <result property="whetherForbidPreference" column="whether_forbid_preference" jdbcType="OTHER"/>
+            <result property="status" column="status" jdbcType="OTHER"/>
+            <result property="getType" column="get_type" jdbcType="OTHER"/>
+            <result property="fetchTime" column="fetch_time" jdbcType="TIMESTAMP"/>
+            <result property="useTime" column="use_time" jdbcType="TIMESTAMP"/>
+            <result property="startTime" column="start_time" jdbcType="TIMESTAMP"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,coupon_type,coupon_name,
+        coupon_code,user_openid,use_order_sn,
+        goods_type,goods_ids,at_least,
+        money,discount,discount_limit,
+        whether_forbid_preference,status,get_type,
+        fetch_time,use_time,start_time,
+        end_time
+    </sql>
+</mapper>

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+page {
+  background-color: #F5F5F5;
+}
+.banner {
+  height: 500rpx;
+  position: relative;
+}
+.banner swiper {
+  height: 500rpx;
+}
+.banner swiper .banner-image {
+  height: 100%;
+  width: 100%;
+}
+.banner .age-location-time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(25, 25, 25, 0.4);
+  color: #FFFFFF;
+  width: 400rpx;
+  height: 70rpx;
+  margin-bottom: 0;
+  margin-top: auto;
+  font-size: 25rpx;
+}
+.banner .age-location-time image {
+  width: 30rpx;
+  height: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+.banner .age-location-time .age {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+.banner .age-location-time .location {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10rpx;
+}
+.banner .age-location-time .time {
+  display: flex;
+  flex-direction: row;
+}
+.product-info {
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  margin-left: 20rpx;
+}
+.product-info .product-price {
+  display: flex;
+  flex-direction: row;
+  color: #F6511D;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+}
+.product-info .product-price .signal {
+  display: flex;
+  font-size: 30rpx;
+  align-items: center;
+  text-align: center;
+}
+.product-info .product-price .price {
+  font-size: 45rpx;
+}
+.product-info .product-name {
+  font-size: 37rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.product-info .product-type {
+  margin-top: 5rpx;
+  color: #ACACAC;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+.divide-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+}
+.user-info {
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #F5F5F5;
+}
+.user-info uni-icons {
+  margin-right: 40rpx;
+  margin-left: auto;
+}
+.user-info .discount {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.user-info .discount .discount-text {
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.user-info .discount .discount-dis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 25rpx;
+}
+.user-info .user {
+  display: flex;
+  flex-direction: row;
+  border-left: #F6511D 1px solid;
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+}
+.divide-area {
+  height: 30rpx;
+  width: 100%;
+  background-color: #EFEFF4;
+}
+.choose-camp {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #F5F5F5;
+}
+.choose-camp .name-camp {
+  display: flex;
+  flex-direction: column;
+}
+.choose-camp .name-camp .name {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.choose-camp .name-camp .name image {
+  display: flex;
+  width: 30rpx;
+  height: 30rpx;
+}
+.choose-camp .name-camp .name .name-text {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.choose-camp .name-camp .camp-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  color: #ACACAC;
+  font-weight: 400;
+}
+.choose-camp uni-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 40rpx;
+}
+.product-detail {
+  height: auto;
+  width: 100%;
+}
+.product-detail .detail-text {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  border-left: #F6511D 1px solid;
+  padding-left: 30rpx;
+}
+.product-detail .detail-image {
+  display: flex;
+  flex-direction: column;
+}
+.product-detail .detail-image image {
+  width: 96%;
+  height: auto;
+  margin-left: auto;
+  margin-right: 2%;
+}
+.register-now {
+  border-top: #CCC solid 1rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100rpx;
+  font-size: 25rpx;
+}
+.register-now .consult {
+  height: 90rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 10rpx;
+}
+.register-now .consult image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.register-now .consult .text {
+  font-size: 23rpx;
+  color: #999999;
+}
+.register-now .register {
+  width: 450rpx;
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 30rpx;
+  border-radius: 42rpx;
+  background: linear-gradient(to right, #FFCA1E, #F01625);
+}
+.register-now .register .text-1 {
+  font-size: 33rpx;
+  color: #ffffff;
+}
+.register-now uni-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #990c55;
+}
+.register-now uni-popup .option {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  margin: 10rpx 10% 10rpx 10%;
+}
+.register-now uni-popup .option .popcontent {
+  font-size: 25rpx;
+}
+.posterPopup {
+  display: flex;
+  flex-direction: column;
+}
+.posterPopup .quit {
+  width: 650rpx;
+}
+.posterPopup .quit image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 600rpx;
+}
+.posterPopup .poster {
+  width: 650rpx;
+  height: 800rpx;
+}
+.posterPopup .poster-tip {
+  font-size: 25rpx;
+  color: #ffffff;
+}
+.posterPopup .poster-tip .text {
+  margin-left: 210rpx;
+}
+

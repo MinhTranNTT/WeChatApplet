@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zw.mapper.BatchMapper">
+
+    <resultMap id="BaseResultMap" type="com.zw.common.domain.Batch">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="productId" column="product_id" jdbcType="INTEGER"/>
+            <result property="beginTime" column="begin_time" jdbcType="DATE"/>
+            <result property="endTime" column="end_time" jdbcType="DATE"/>
+            <result property="stock" column="stock" jdbcType="INTEGER"/>
+            <result property="remains" column="remains" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,product_id,begin_time,
+        end_time,stock,remains
+    </sql>
+
+    <select id="selectAllByProductId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_batch
+        where
+        product_id = #{productId,jdbcType=NUMERIC}
+    </select>
+</mapper>

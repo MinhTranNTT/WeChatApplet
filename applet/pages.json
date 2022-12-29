@@ -1,0 +1,144 @@
+{
+	"pages": [{
+		"path": "pages/adv/adv",
+		"style": {
+			"navigationBarTitleText": "",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/home/home",
+		"style": {
+			// "navigationBarTitleText": "首页",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/my/my",
+		"style": {
+			// "navigationBarTitleText": "我的",
+			"enablePullDownRefresh": true,
+			"backgroundColor": "#ccc"
+		}
+
+	}],
+	"subPackages": [{
+			"root": "homeSubPkg",
+			"pages": [
+
+				{
+					"path": "category/category",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "products/products",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "selectCamp/selectCamp",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "selectCampers/selectCampers",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "mySubPkg",
+			"pages": [
+
+				{
+					"path": "orderManage/orderManage",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "campersManage/campersManage",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "addCampers/addCampers",
+					"style": {
+						// "navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "updateCamper/updateCamper",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "orderInfo/orderInfo",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "couponManage/couponManage",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "getCoupon/getCoupon",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		}
+	],
+	"tabBar": {
+		"backgroundColor": "#1455B3",
+		"selectedColor": "#FFD300",
+		"color": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "主页",
+				"iconPath": "static/tabbar/home.png",
+				"selectedIconPath": "static/tabbar/home-active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my-active.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "信游研学",
+		"navigationBarBackgroundColor": "#1455B3",
+		// "backgroundColor": "#1455B3",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	}
+}

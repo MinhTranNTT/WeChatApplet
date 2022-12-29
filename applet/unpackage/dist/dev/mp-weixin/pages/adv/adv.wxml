@@ -1,0 +1,1 @@
+<view><view class="adv"><view class="tips"><view class="adv-time">{{advTime+'秒后'}}</view><view data-event-opts="{{[['tap',[['jump',['$event']]]]]}}" class="jump" bindtap="__e">跳转</view></view><image class="adv-image" src="{{adv.imageUrl}}"></image></view></view>

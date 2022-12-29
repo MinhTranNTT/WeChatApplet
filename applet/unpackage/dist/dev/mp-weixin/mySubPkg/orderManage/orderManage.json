@@ -1,0 +1,6 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "empty-area": "/components/empty-area/empty-area"
+  }
+}

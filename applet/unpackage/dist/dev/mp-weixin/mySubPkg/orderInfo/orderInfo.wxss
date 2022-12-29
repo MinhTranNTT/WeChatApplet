@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+page {
+  background-color: #cccccc;
+}
+.order-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 704;
+  height: 100rpx;
+  font-size: 40rpx;
+  color: red;
+  margin: 20rpx 23rpx 20rpx 23rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+}
+.order-status .stat #refund {
+  color: #0EB117;
+}
+.product-info {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 704rpx;
+  height: 250rpx;
+  margin: 20rpx 23rpx 20rpx 23rpx;
+  border-radius: 30rpx;
+  align-items: center;
+}
+.product-info image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 20rpx 0 20rpx;
+  border-radius: 30rpx;
+}
+.product-info .product-name {
+  width: 350rpx;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+  font-size: 28rpx;
+}
+.product-info .product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50rpx 20rpx 0 auto;
+  height: 80%;
+}
+.product-info .product-price .price {
+  color: #FF0035;
+  font-size: 40rpx;
+}
+.product-info .product-price .num {
+  color: #999999;
+  font-size: 30rpx;
+  margin: 10rpx 10rpx 0 0;
+}
+.order-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 704rpx;
+  margin: 20rpx 23rpx 20rpx 23rpx;
+  border-radius: 30rpx;
+  justify-content: center;
+}
+.order-info .title {
+  margin: 20rpx 20rpx 20rpx 20rpx;
+  border-bottom: #cccccc dashed 3rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.order-info .order-item {
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50rpx;
+}
+.order-info .order-item #price {
+  color: #FF0035;
+}
+.order-info .order-item .item-text {
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.order-info .order-item .item-info {
+  margin: 0 10rpx 0 auto;
+  font-size: 27rpx;
+  color: #999999;
+  max-width: 450rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.order-info .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10rpx 0 20rpx 0;
+}
+.order-info .options #one {
+  margin: 0 30rpx 0 auto;
+}
+.order-info .options #two {
+  margin: 0 20rpx 0 0rpx;
+}
+.order-info .options #three {
+  margin: 0 20rpx 0 auto;
+}
+.order-info .options .time {
+  margin: 0 auto 0 20rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.order-info .options button {
+  display: flex;
+  flex-direction: row;
+  border: #999999 solid 1px;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.camper-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 704rpx;
+  margin: 20rpx 23rpx 20rpx 23rpx;
+  border-radius: 30rpx;
+  justify-content: center;
+}
+.camper-info .camper-title {
+  margin: 20rpx 20rpx 0 20rpx;
+  border-bottom: #cccccc dashed 3rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+.camper-info .camper-info-item {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+}
+.camper-info .camper-info-item .name {
+  margin: 0 auto 0 10rpx;
+}
+.camper-info .camper-info-item .gender {
+  margin: 0 20rpx 0 auto;
+}
+.camper-info .camper-info-item .gender image {
+  width: 45rpx;
+  height: 45rpx;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 704rpx;
+  margin: 20rpx 23rpx 20rpx 23rpx;
+  border-radius: 30rpx;
+  justify-content: center;
+}
+.contact .contact-btn {
+  border: none;
+  border-radius: 30rpx;
+  background-color: #ffffff;
+  width: 100%;
+}
+

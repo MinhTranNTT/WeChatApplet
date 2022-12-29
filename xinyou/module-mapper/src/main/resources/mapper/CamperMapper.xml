@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zw.mapper.CamperMapper">
+    <resultMap id="BaseResultMap" type="com.zw.common.domain.Camper">
+        <id property="id" column="id" jdbcType="INTEGER"/>
+        <result property="openid" column="openid" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="gender" column="gender" jdbcType="INTEGER"/>
+        <result property="birthday" column="birthday" jdbcType="DATE"/>
+        <result property="typeOfCerti" column="type_of_certi" jdbcType="INTEGER"/>
+        <result property="validIdNumber" column="valid_id_number" jdbcType="VARCHAR"/>
+        <result property="otherIdNumber" column="other_id_number" jdbcType="VARCHAR"/>
+        <result property="guardianName" column="guardian_name" jdbcType="VARCHAR"/>
+        <result property="photoUrl" column="photo_url" jdbcType="VARCHAR"/>
+        <result property="school" column="school" jdbcType="VARCHAR"/>
+        <result property="grade" column="grade" jdbcType="VARCHAR"/>
+        <result property="clothSize" column="cloth_size" jdbcType="INTEGER"/>
+        <result property="phone" column="phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,openid,name,
+        gender,birthday,type_of_certi,
+        valid_id_number,other_id_number,guardian_name,
+        photo_url,school,grade,
+        cloth_size,phone
+    </sql>
+
+    <update id="updateCamperByOpenid">
+        update mall_camper
+        <set>
+            <if test="name != null"> name = #{name,jdbcType=VARCHAR},</if>
+            <if test="gender != null">gender = #{gender,jdbcType=INTEGER},</if>
+            <if test="birthday != null">birthday = #{birthday,jdbcType=DATE},</if>
+            <if test="typeOfCerti != null">type_of_certi = #{typeOfCerti,jdbcType=INTEGER},</if>
+            <if test="validIdNumber != null">valid_id_number = #{validIdNumber,jdbcType=VARCHAR},</if>
+            <if test="otherIdNumber != null">other_id_number = #{otherIdNumber,jdbcType=VARCHAR},</if>
+            <if test="guardianName != null">guardian_name = #{guardianName,jdbcType=VARCHAR},</if>
+            <if test="photoUrl != null">photo_url = #{photoUrl,jdbcType=VARCHAR},</if>
+            <if test="school != null">school = #{school,jdbcType=VARCHAR},</if>
+            <if test="grade != null">grade = #{grade,jdbcType=VARCHAR},</if>
+            <if test="clothSize != null">cloth_size = #{clothSize,jdbcType=INTEGER},</if>
+            <if test="phone != null">phone = #{phone,jdbcType=VARCHAR},</if>
+        </set>
+        where openid = #{openid,jdbcType=VARCHAR}
+    </update>
+
+    <select id="getAllByOpenid" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_camper
+        where
+        openid = #{openid,jdbcType=VARCHAR}
+    </select>
+
+    <delete id="deleteByOpenid">
+        delete
+        from mall_camper
+        where openid = #{openid,jdbcType=VARCHAR}
+    </delete>
+
+    <select id="getPhotoUrlByOpenid" resultMap="BaseResultMap">
+        select photo_url
+        from mall_camper
+        where openid = #{openid,jdbcType=VARCHAR}
+    </select>
+</mapper>

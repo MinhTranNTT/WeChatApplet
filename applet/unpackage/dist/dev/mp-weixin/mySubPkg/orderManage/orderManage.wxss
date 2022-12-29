@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+page {
+  background-color: #cccccc;
+}
+.order-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+}
+.order-status .order-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80rpx;
+  color: #7F7F7F;
+}
+.order-status .activate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80rpx;
+  color: #0EB117;
+  border-bottom: #0EB117 solid 4rpx;
+}
+.order-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 704rpx;
+  margin: 30rpx 23rpx 0 23rpx;
+}
+.order-info .order-info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  margin: 10rpx 0 10rpx 0;
+}
+.order-info .order-info-item .order {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+}
+.order-info .order-info-item .order .sn {
+  display: flex;
+  flex-direction: row;
+  font-size: 25rpx;
+  color: #999999;
+}
+.order-info .order-info-item .order .stat {
+  margin: 0 0 0 auto;
+}
+.order-info .order-info-item .order .stat .status {
+  color: red;
+  font-weight: bold;
+}
+.order-info .order-info-item .order .stat #refund {
+  color: #0EB117;
+}
+.order-info .order-info-item .camp-info {
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  align-items: center;
+}
+.order-info .order-info-item .camp-info image {
+  width: 170rpx;
+  height: 170rpx;
+  margin-right: 10rpx;
+  border-radius: 20rpx;
+}
+.order-info .order-info-item .camp-info .product-name {
+  width: 370rpx;
+  font-size: 28rpx;
+}
+.order-info .order-info-item .camp-info .product-price {
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.order-info .order-info-item .camp-info .product-price .price {
+  font-size: 35rpx;
+  color: #FF0035;
+}
+.order-info .order-info-item .camp-info .product-price .num {
+  font-size: 28rpx;
+  color: #999999;
+  margin: 10rpx 10rpx 0 0;
+}
+.order-info .order-info-item .total-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5rpx 0 10rpx 20rpx;
+}
+.order-info .order-info-item .total-price .text {
+  font-size: 28rpx;
+}
+.order-info .order-info-item .total-price .t-price {
+  margin: 0 20rpx 0 auto;
+  font-size: 28rpx;
+  color: #FF0035;
+}
+.order-info .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10rpx 0 20rpx 0;
+}
+.order-info .options #one {
+  margin: 0 30rpx 0 auto;
+}
+.order-info .options #two {
+  margin: 0 20rpx 0 0rpx;
+}
+.order-info .options #three {
+  margin: 0 20rpx 0 auto;
+}
+.order-info .options .time {
+  margin: 0 auto 0 20rpx;
+  font-size: 28rpx;
+  color: #999999;
+}
+.order-info .options button {
+  display: flex;
+  flex-direction: row;
+  border: #999999 solid 1px;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+.order-info .tips {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 25rpx;
+  color: #FF0035;
+}
+

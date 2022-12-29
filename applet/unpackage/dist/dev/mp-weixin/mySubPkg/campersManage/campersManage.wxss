@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* 水平间距 */
+/* 水平间距 */
+page {
+  background-color: #EFEFF4;
+}
+.tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-size: 25rpx;
+  color: #5b5b5b;
+}
+.camper-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30rpx 0 30rpx 0;
+  justify-content: center;
+  align-items: center;
+}
+.camper-list .camper-item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10rpx;
+  height: 160rpx;
+  width: 90%;
+  margin: 20rpx 0 10rpx 0;
+  align-items: center;
+}
+.camper-list .camper-item image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 24rpx 0 28rpx;
+  border-radius: 50%;
+}
+.camper-list .camper-item .name-gender-idcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.camper-list .camper-item .name-gender-idcard .name-gender {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60rpx;
+}
+.camper-list .camper-item .name-gender-idcard .name-gender image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.camper-list .camper-item .name-gender-idcard .name-gender .name {
+  width: 120rpx;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.camper-list .camper-item .name-gender-idcard .idcard {
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #999999;
+}
+.camper-list .camper-item uni-icons {
+  margin-left: auto;
+  margin-right: 30rpx;
+}
+.add-campers {
+  background-color: #13BB0E;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+.add-campers .add-text {
+  font-size: 35rpx;
+  color: #fff;
+}
+

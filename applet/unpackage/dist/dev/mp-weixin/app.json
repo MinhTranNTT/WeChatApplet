@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/adv/adv",
+    "pages/home/home",
+    "pages/my/my"
+  ],
+  "subPackages": [
+    {
+      "root": "homeSubPkg",
+      "pages": [
+        "category/category",
+        "products/products",
+        "selectCamp/selectCamp",
+        "selectCampers/selectCampers"
+      ]
+    },
+    {
+      "root": "mySubPkg",
+      "pages": [
+        "orderManage/orderManage",
+        "campersManage/campersManage",
+        "addCampers/addCampers",
+        "updateCamper/updateCamper",
+        "orderInfo/orderInfo",
+        "couponManage/couponManage",
+        "getCoupon/getCoupon"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "信游研学",
+    "navigationBarBackgroundColor": "#1455B3"
+  },
+  "tabBar": {
+    "backgroundColor": "#1455B3",
+    "selectedColor": "#FFD300",
+    "color": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/tabbar/my.png",
+        "selectedIconPath": "static/tabbar/my-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
