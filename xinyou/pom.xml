@@ -24,6 +24,7 @@
         <module>module-service</module>
         <module>module-api</module>
         <module>module-mapper</module>
+        <module>module-backstage</module>
     </modules>
 
     <properties>

@@ -2471,7 +2471,25 @@ module.exports = _construct, module.exports.__esModule = true, module.exports["d
 
 /***/ }),
 
-/***/ 144:
+/***/ 15:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _setPrototypeOf(o, p) {
+  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _setPrototypeOf(o, p);
+}
+module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 152:
 /*!*****************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \*****************************************************************************/
@@ -3493,24 +3511,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 15:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/setPrototypeOf.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _setPrototypeOf(o, p) {
-  module.exports = _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _setPrototypeOf(o, p);
-}
-module.exports = _setPrototypeOf, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ 16:
 /*!*************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/isNativeReflectConstruct.js ***!
@@ -3551,7 +3551,22 @@ module.exports = _toConsumableArray, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
-/***/ 173:
+/***/ 18:
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 8);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 188:
 /*!********************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-forms/components/uni-forms/validate.js ***!
   \********************************************************************************/
@@ -3567,9 +3582,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 25));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ 174));
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 175));
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 177));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ 189));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 190));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 192));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 27));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
@@ -4243,7 +4258,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 174:
+/***/ 189:
 /*!*********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/inherits.js ***!
   \*********************************************************/
@@ -4271,7 +4286,21 @@ module.exports = _inherits, module.exports.__esModule = true, module.exports["de
 
 /***/ }),
 
-/***/ 175:
+/***/ 19:
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 190:
 /*!**************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/possibleConstructorReturn.js ***!
   \**************************************************************************/
@@ -4279,7 +4308,7 @@ module.exports = _inherits, module.exports.__esModule = true, module.exports["de
 /***/ (function(module, exports, __webpack_require__) {
 
 var _typeof = __webpack_require__(/*! ./typeof.js */ 12)["default"];
-var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ 176);
+var assertThisInitialized = __webpack_require__(/*! ./assertThisInitialized.js */ 191);
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
@@ -4292,7 +4321,7 @@ module.exports = _possibleConstructorReturn, module.exports.__esModule = true, m
 
 /***/ }),
 
-/***/ 176:
+/***/ 191:
 /*!**********************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/assertThisInitialized.js ***!
   \**********************************************************************/
@@ -4309,7 +4338,7 @@ module.exports = _assertThisInitialized, module.exports.__esModule = true, modul
 
 /***/ }),
 
-/***/ 177:
+/***/ 192:
 /*!***************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/getPrototypeOf.js ***!
   \***************************************************************/
@@ -4326,7 +4355,7 @@ module.exports = _getPrototypeOf, module.exports.__esModule = true, module.expor
 
 /***/ }),
 
-/***/ 178:
+/***/ 193:
 /*!*****************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-forms/components/uni-forms/utils.js ***!
   \*****************************************************************************/
@@ -4662,35 +4691,6 @@ exports.isEqual = isEqual;
 
 /***/ }),
 
-/***/ 18:
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 8);
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-}
-module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 19:
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ 2:
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -4736,7 +4736,537 @@ module.exports = _nonIterableSpread, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
-/***/ 200:
+/***/ 21:
+/*!*************************************************************!*\
+  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni, global) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.LOCALE_ZH_HANT = exports.LOCALE_ZH_HANS = exports.LOCALE_FR = exports.LOCALE_ES = exports.LOCALE_EN = exports.I18n = exports.Formatter = void 0;
+exports.compileI18nJsonStr = compileI18nJsonStr;
+exports.hasI18nJson = hasI18nJson;
+exports.initVueI18n = initVueI18n;
+exports.isI18nStr = isI18nStr;
+exports.isString = void 0;
+exports.normalizeLocale = normalizeLocale;
+exports.parseI18nJson = parseI18nJson;
+exports.resolveLocale = resolveLocale;
+var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 4));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
+var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 12));
+var isArray = Array.isArray;
+var isObject = function isObject(val) {
+  return val !== null && (0, _typeof2.default)(val) === 'object';
+};
+var defaultDelimiters = ['{', '}'];
+var BaseFormatter = /*#__PURE__*/function () {
+  function BaseFormatter() {
+    (0, _classCallCheck2.default)(this, BaseFormatter);
+    this._caches = Object.create(null);
+  }
+  (0, _createClass2.default)(BaseFormatter, [{
+    key: "interpolate",
+    value: function interpolate(message, values) {
+      var delimiters = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultDelimiters;
+      if (!values) {
+        return [message];
+      }
+      var tokens = this._caches[message];
+      if (!tokens) {
+        tokens = parse(message, delimiters);
+        this._caches[message] = tokens;
+      }
+      return compile(tokens, values);
+    }
+  }]);
+  return BaseFormatter;
+}();
+exports.Formatter = BaseFormatter;
+var RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
+var RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
+function parse(format, _ref) {
+  var _ref2 = (0, _slicedToArray2.default)(_ref, 2),
+    startDelimiter = _ref2[0],
+    endDelimiter = _ref2[1];
+  var tokens = [];
+  var position = 0;
+  var text = '';
+  while (position < format.length) {
+    var char = format[position++];
+    if (char === startDelimiter) {
+      if (text) {
+        tokens.push({
+          type: 'text',
+          value: text
+        });
+      }
+      text = '';
+      var sub = '';
+      char = format[position++];
+      while (char !== undefined && char !== endDelimiter) {
+        sub += char;
+        char = format[position++];
+      }
+      var isClosed = char === endDelimiter;
+      var type = RE_TOKEN_LIST_VALUE.test(sub) ? 'list' : isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ? 'named' : 'unknown';
+      tokens.push({
+        value: sub,
+        type: type
+      });
+    }
+    //  else if (char === '%') {
+    //   // when found rails i18n syntax, skip text capture
+    //   if (format[position] !== '{') {
+    //     text += char
+    //   }
+    // }
+    else {
+      text += char;
+    }
+  }
+  text && tokens.push({
+    type: 'text',
+    value: text
+  });
+  return tokens;
+}
+function compile(tokens, values) {
+  var compiled = [];
+  var index = 0;
+  var mode = isArray(values) ? 'list' : isObject(values) ? 'named' : 'unknown';
+  if (mode === 'unknown') {
+    return compiled;
+  }
+  while (index < tokens.length) {
+    var token = tokens[index];
+    switch (token.type) {
+      case 'text':
+        compiled.push(token.value);
+        break;
+      case 'list':
+        compiled.push(values[parseInt(token.value, 10)]);
+        break;
+      case 'named':
+        if (mode === 'named') {
+          compiled.push(values[token.value]);
+        } else {
+          if (true) {
+            console.warn("Type of token '".concat(token.type, "' and format of value '").concat(mode, "' don't match!"));
+          }
+        }
+        break;
+      case 'unknown':
+        if (true) {
+          console.warn("Detect 'unknown' type of token!");
+        }
+        break;
+    }
+    index++;
+  }
+  return compiled;
+}
+var LOCALE_ZH_HANS = 'zh-Hans';
+exports.LOCALE_ZH_HANS = LOCALE_ZH_HANS;
+var LOCALE_ZH_HANT = 'zh-Hant';
+exports.LOCALE_ZH_HANT = LOCALE_ZH_HANT;
+var LOCALE_EN = 'en';
+exports.LOCALE_EN = LOCALE_EN;
+var LOCALE_FR = 'fr';
+exports.LOCALE_FR = LOCALE_FR;
+var LOCALE_ES = 'es';
+exports.LOCALE_ES = LOCALE_ES;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var hasOwn = function hasOwn(val, key) {
+  return hasOwnProperty.call(val, key);
+};
+var defaultFormatter = new BaseFormatter();
+function include(str, parts) {
+  return !!parts.find(function (part) {
+    return str.indexOf(part) !== -1;
+  });
+}
+function startsWith(str, parts) {
+  return parts.find(function (part) {
+    return str.indexOf(part) === 0;
+  });
+}
+function normalizeLocale(locale, messages) {
+  if (!locale) {
+    return;
+  }
+  locale = locale.trim().replace(/_/g, '-');
+  if (messages && messages[locale]) {
+    return locale;
+  }
+  locale = locale.toLowerCase();
+  if (locale.indexOf('zh') === 0) {
+    if (locale.indexOf('-hans') > -1) {
+      return LOCALE_ZH_HANS;
+    }
+    if (locale.indexOf('-hant') > -1) {
+      return LOCALE_ZH_HANT;
+    }
+    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
+      return LOCALE_ZH_HANT;
+    }
+    return LOCALE_ZH_HANS;
+  }
+  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
+  if (lang) {
+    return lang;
+  }
+}
+var I18n = /*#__PURE__*/function () {
+  function I18n(_ref3) {
+    var locale = _ref3.locale,
+      fallbackLocale = _ref3.fallbackLocale,
+      messages = _ref3.messages,
+      watcher = _ref3.watcher,
+      formater = _ref3.formater;
+    (0, _classCallCheck2.default)(this, I18n);
+    this.locale = LOCALE_EN;
+    this.fallbackLocale = LOCALE_EN;
+    this.message = {};
+    this.messages = {};
+    this.watchers = [];
+    if (fallbackLocale) {
+      this.fallbackLocale = fallbackLocale;
+    }
+    this.formater = formater || defaultFormatter;
+    this.messages = messages || {};
+    this.setLocale(locale || LOCALE_EN);
+    if (watcher) {
+      this.watchLocale(watcher);
+    }
+  }
+  (0, _createClass2.default)(I18n, [{
+    key: "setLocale",
+    value: function setLocale(locale) {
+      var _this = this;
+      var oldLocale = this.locale;
+      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
+      if (!this.messages[this.locale]) {
+        // 可能初始化时不存在
+        this.messages[this.locale] = {};
+      }
+      this.message = this.messages[this.locale];
+      // 仅发生变化时，通知
+      if (oldLocale !== this.locale) {
+        this.watchers.forEach(function (watcher) {
+          watcher(_this.locale, oldLocale);
+        });
+      }
+    }
+  }, {
+    key: "getLocale",
+    value: function getLocale() {
+      return this.locale;
+    }
+  }, {
+    key: "watchLocale",
+    value: function watchLocale(fn) {
+      var _this2 = this;
+      var index = this.watchers.push(fn) - 1;
+      return function () {
+        _this2.watchers.splice(index, 1);
+      };
+    }
+  }, {
+    key: "add",
+    value: function add(locale, message) {
+      var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var curMessages = this.messages[locale];
+      if (curMessages) {
+        if (override) {
+          Object.assign(curMessages, message);
+        } else {
+          Object.keys(message).forEach(function (key) {
+            if (!hasOwn(curMessages, key)) {
+              curMessages[key] = message[key];
+            }
+          });
+        }
+      } else {
+        this.messages[locale] = message;
+      }
+    }
+  }, {
+    key: "f",
+    value: function f(message, values, delimiters) {
+      return this.formater.interpolate(message, values, delimiters).join('');
+    }
+  }, {
+    key: "t",
+    value: function t(key, locale, values) {
+      var message = this.message;
+      if (typeof locale === 'string') {
+        locale = normalizeLocale(locale, this.messages);
+        locale && (message = this.messages[locale]);
+      } else {
+        values = locale;
+      }
+      if (!hasOwn(message, key)) {
+        console.warn("Cannot translate the value of keypath ".concat(key, ". Use the value of keypath as default."));
+        return key;
+      }
+      return this.formater.interpolate(message[key], values).join('');
+    }
+  }]);
+  return I18n;
+}();
+exports.I18n = I18n;
+function watchAppLocale(appVm, i18n) {
+  // 需要保证 watch 的触发在组件渲染之前
+  if (appVm.$watchLocale) {
+    // vue2
+    appVm.$watchLocale(function (newLocale) {
+      i18n.setLocale(newLocale);
+    });
+  } else {
+    appVm.$watch(function () {
+      return appVm.$locale;
+    }, function (newLocale) {
+      i18n.setLocale(newLocale);
+    });
+  }
+}
+function getDefaultLocale() {
+  if (typeof uni !== 'undefined' && uni.getLocale) {
+    return uni.getLocale();
+  }
+  // 小程序平台，uni 和 uni-i18n 互相引用，导致访问不到 uni，故在 global 上挂了 getLocale
+  if (typeof global !== 'undefined' && global.getLocale) {
+    return global.getLocale();
+  }
+  return LOCALE_EN;
+}
+function initVueI18n(locale) {
+  var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  var fallbackLocale = arguments.length > 2 ? arguments[2] : undefined;
+  var watcher = arguments.length > 3 ? arguments[3] : undefined;
+  // 兼容旧版本入参
+  if (typeof locale !== 'string') {
+    var _ref4 = [messages, locale];
+    locale = _ref4[0];
+    messages = _ref4[1];
+  }
+  if (typeof locale !== 'string') {
+    // 因为小程序平台，uni-i18n 和 uni 互相引用，导致此时访问 uni 时，为 undefined
+    locale = getDefaultLocale();
+  }
+  if (typeof fallbackLocale !== 'string') {
+    fallbackLocale = typeof __uniConfig !== 'undefined' && __uniConfig.fallbackLocale || LOCALE_EN;
+  }
+  var i18n = new I18n({
+    locale: locale,
+    fallbackLocale: fallbackLocale,
+    messages: messages,
+    watcher: watcher
+  });
+  var _t = function t(key, values) {
+    if (typeof getApp !== 'function') {
+      // app view
+      /* eslint-disable no-func-assign */
+      _t = function t(key, values) {
+        return i18n.t(key, values);
+      };
+    } else {
+      var isWatchedAppLocale = false;
+      _t = function t(key, values) {
+        var appVm = getApp().$vm;
+        // 可能$vm还不存在，比如在支付宝小程序中，组件定义较早，在props的default里使用了t()函数（如uni-goods-nav），此时app还未初始化
+        // options: {
+        // 	type: Array,
+        // 	default () {
+        // 		return [{
+        // 			icon: 'shop',
+        // 			text: t("uni-goods-nav.options.shop"),
+        // 		}, {
+        // 			icon: 'cart',
+        // 			text: t("uni-goods-nav.options.cart")
+        // 		}]
+        // 	}
+        // },
+        if (appVm) {
+          // 触发响应式
+          appVm.$locale;
+          if (!isWatchedAppLocale) {
+            isWatchedAppLocale = true;
+            watchAppLocale(appVm, i18n);
+          }
+        }
+        return i18n.t(key, values);
+      };
+    }
+    return _t(key, values);
+  };
+  return {
+    i18n: i18n,
+    f: function f(message, values, delimiters) {
+      return i18n.f(message, values, delimiters);
+    },
+    t: function t(key, values) {
+      return _t(key, values);
+    },
+    add: function add(locale, message) {
+      var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      return i18n.add(locale, message, override);
+    },
+    watch: function watch(fn) {
+      return i18n.watchLocale(fn);
+    },
+    getLocale: function getLocale() {
+      return i18n.getLocale();
+    },
+    setLocale: function setLocale(newLocale) {
+      return i18n.setLocale(newLocale);
+    }
+  };
+}
+var isString = function isString(val) {
+  return typeof val === 'string';
+};
+exports.isString = isString;
+var formater;
+function hasI18nJson(jsonObj, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  return walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        return true;
+      }
+    } else {
+      return hasI18nJson(value, delimiters);
+    }
+  });
+}
+function parseI18nJson(jsonObj, values, delimiters) {
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    var value = jsonObj[key];
+    if (isString(value)) {
+      if (isI18nStr(value, delimiters)) {
+        jsonObj[key] = compileStr(value, values, delimiters);
+      }
+    } else {
+      parseI18nJson(value, values, delimiters);
+    }
+  });
+  return jsonObj;
+}
+function compileI18nJsonStr(jsonStr, _ref5) {
+  var locale = _ref5.locale,
+    locales = _ref5.locales,
+    delimiters = _ref5.delimiters;
+  if (!isI18nStr(jsonStr, delimiters)) {
+    return jsonStr;
+  }
+  if (!formater) {
+    formater = new BaseFormatter();
+  }
+  var localeValues = [];
+  Object.keys(locales).forEach(function (name) {
+    if (name !== locale) {
+      localeValues.push({
+        locale: name,
+        values: locales[name]
+      });
+    }
+  });
+  localeValues.unshift({
+    locale: locale,
+    values: locales[locale]
+  });
+  try {
+    return JSON.stringify(compileJsonObj(JSON.parse(jsonStr), localeValues, delimiters), null, 2);
+  } catch (e) {}
+  return jsonStr;
+}
+function isI18nStr(value, delimiters) {
+  return value.indexOf(delimiters[0]) > -1;
+}
+function compileStr(value, values, delimiters) {
+  return formater.interpolate(value, values, delimiters).join('');
+}
+function compileValue(jsonObj, key, localeValues, delimiters) {
+  var value = jsonObj[key];
+  if (isString(value)) {
+    // 存在国际化
+    if (isI18nStr(value, delimiters)) {
+      jsonObj[key] = compileStr(value, localeValues[0].values, delimiters);
+      if (localeValues.length > 1) {
+        // 格式化国际化语言
+        var valueLocales = jsonObj[key + 'Locales'] = {};
+        localeValues.forEach(function (localValue) {
+          valueLocales[localValue.locale] = compileStr(value, localValue.values, delimiters);
+        });
+      }
+    }
+  } else {
+    compileJsonObj(value, localeValues, delimiters);
+  }
+}
+function compileJsonObj(jsonObj, localeValues, delimiters) {
+  walkJsonObj(jsonObj, function (jsonObj, key) {
+    compileValue(jsonObj, key, localeValues, delimiters);
+  });
+  return jsonObj;
+}
+function walkJsonObj(jsonObj, walk) {
+  if (isArray(jsonObj)) {
+    for (var i = 0; i < jsonObj.length; i++) {
+      if (walk(jsonObj, i)) {
+        return true;
+      }
+    }
+  } else if (isObject(jsonObj)) {
+    for (var key in jsonObj) {
+      if (walk(jsonObj, key)) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+function resolveLocale(locales) {
+  return function (locale) {
+    if (!locale) {
+      return locale;
+    }
+    locale = normalizeLocale(locale) || locale;
+    return resolveLocaleChain(locale).find(function (locale) {
+      return locales.indexOf(locale) > -1;
+    });
+  };
+}
+function resolveLocaleChain(locale) {
+  var chain = [];
+  var tokens = locale.split('-');
+  while (tokens.length) {
+    chain.push(tokens.join('-'));
+    tokens.pop();
+  }
+  return chain;
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 2)))
+
+/***/ }),
+
+/***/ 215:
 /*!************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js ***!
   \************************************************************************************/
@@ -4759,12 +5289,12 @@ var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/r
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 10));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
-var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ 174));
-var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 175));
-var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 177));
-var _wrapNativeSuper2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/wrapNativeSuper */ 201));
+var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inherits */ 189));
+var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ 190));
+var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ 192));
+var _wrapNativeSuper2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/wrapNativeSuper */ 216));
 var _uniI18n = __webpack_require__(/*! @dcloudio/uni-i18n */ 21);
-var _pages = _interopRequireDefault(__webpack_require__(/*! @/pages.json */ 203));
+var _pages = _interopRequireDefault(__webpack_require__(/*! @/pages.json */ 218));
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e33) { throw _e33; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e34) { didErr = true; err = _e34; }, f: function f() { try { if (!normalCompletion && it.return != null) it.return(); } finally { if (didErr) throw err; } } }; }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
@@ -5181,7 +5711,7 @@ var k = m(undefined),
 var T = "";
 try {
   {
-    var _e2 = __webpack_require__(/*! uni-stat-config */ 204).default || __webpack_require__(/*! uni-stat-config */ 204);
+    var _e2 = __webpack_require__(/*! uni-stat-config */ 219).default || __webpack_require__(/*! uni-stat-config */ 219);
     T = _e2.appid;
   }
 } catch (e) {}
@@ -11644,16 +12174,16 @@ exports.default = Ps;
 
 /***/ }),
 
-/***/ 201:
+/***/ 216:
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/wrapNativeSuper.js ***!
   \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getPrototypeOf = __webpack_require__(/*! ./getPrototypeOf.js */ 177);
+var getPrototypeOf = __webpack_require__(/*! ./getPrototypeOf.js */ 192);
 var setPrototypeOf = __webpack_require__(/*! ./setPrototypeOf.js */ 15);
-var isNativeFunction = __webpack_require__(/*! ./isNativeFunction.js */ 202);
+var isNativeFunction = __webpack_require__(/*! ./isNativeFunction.js */ 217);
 var construct = __webpack_require__(/*! ./construct.js */ 14);
 function _wrapNativeSuper(Class) {
   var _cache = typeof Map === "function" ? new Map() : undefined;
@@ -11685,7 +12215,7 @@ module.exports = _wrapNativeSuper, module.exports.__esModule = true, module.expo
 
 /***/ }),
 
-/***/ 202:
+/***/ 217:
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/isNativeFunction.js ***!
   \*****************************************************************/
@@ -11699,7 +12229,7 @@ module.exports = _isNativeFunction, module.exports.__esModule = true, module.exp
 
 /***/ }),
 
-/***/ 203:
+/***/ 218:
 /*!*****************************************************************!*\
   !*** C:/Data/ZW/applet/pages.json?{"type":"origin-pages-json"} ***!
   \*****************************************************************/
@@ -11828,7 +12358,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 204:
+/***/ 219:
 /*!****************************************************!*\
   !*** C:/Data/ZW/applet/pages.json?{"type":"stat"} ***!
   \****************************************************/
@@ -11849,537 +12379,23 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 21:
-/*!*************************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-i18n/dist/uni-i18n.es.js ***!
-  \*************************************************************/
+/***/ 22:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/classCallCheck.js ***!
+  \***************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni, global) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.LOCALE_ZH_HANT = exports.LOCALE_ZH_HANS = exports.LOCALE_FR = exports.LOCALE_ES = exports.LOCALE_EN = exports.I18n = exports.Formatter = void 0;
-exports.compileI18nJsonStr = compileI18nJsonStr;
-exports.hasI18nJson = hasI18nJson;
-exports.initVueI18n = initVueI18n;
-exports.isI18nStr = isI18nStr;
-exports.isString = void 0;
-exports.normalizeLocale = normalizeLocale;
-exports.parseI18nJson = parseI18nJson;
-exports.resolveLocale = resolveLocale;
-var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 4));
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
-var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 12));
-var isArray = Array.isArray;
-var isObject = function isObject(val) {
-  return val !== null && (0, _typeof2.default)(val) === 'object';
-};
-var defaultDelimiters = ['{', '}'];
-var BaseFormatter = /*#__PURE__*/function () {
-  function BaseFormatter() {
-    (0, _classCallCheck2.default)(this, BaseFormatter);
-    this._caches = Object.create(null);
-  }
-  (0, _createClass2.default)(BaseFormatter, [{
-    key: "interpolate",
-    value: function interpolate(message, values) {
-      var delimiters = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : defaultDelimiters;
-      if (!values) {
-        return [message];
-      }
-      var tokens = this._caches[message];
-      if (!tokens) {
-        tokens = parse(message, delimiters);
-        this._caches[message] = tokens;
-      }
-      return compile(tokens, values);
-    }
-  }]);
-  return BaseFormatter;
-}();
-exports.Formatter = BaseFormatter;
-var RE_TOKEN_LIST_VALUE = /^(?:\d)+/;
-var RE_TOKEN_NAMED_VALUE = /^(?:\w)+/;
-function parse(format, _ref) {
-  var _ref2 = (0, _slicedToArray2.default)(_ref, 2),
-    startDelimiter = _ref2[0],
-    endDelimiter = _ref2[1];
-  var tokens = [];
-  var position = 0;
-  var text = '';
-  while (position < format.length) {
-    var char = format[position++];
-    if (char === startDelimiter) {
-      if (text) {
-        tokens.push({
-          type: 'text',
-          value: text
-        });
-      }
-      text = '';
-      var sub = '';
-      char = format[position++];
-      while (char !== undefined && char !== endDelimiter) {
-        sub += char;
-        char = format[position++];
-      }
-      var isClosed = char === endDelimiter;
-      var type = RE_TOKEN_LIST_VALUE.test(sub) ? 'list' : isClosed && RE_TOKEN_NAMED_VALUE.test(sub) ? 'named' : 'unknown';
-      tokens.push({
-        value: sub,
-        type: type
-      });
-    }
-    //  else if (char === '%') {
-    //   // when found rails i18n syntax, skip text capture
-    //   if (format[position] !== '{') {
-    //     text += char
-    //   }
-    // }
-    else {
-      text += char;
-    }
-  }
-  text && tokens.push({
-    type: 'text',
-    value: text
-  });
-  return tokens;
-}
-function compile(tokens, values) {
-  var compiled = [];
-  var index = 0;
-  var mode = isArray(values) ? 'list' : isObject(values) ? 'named' : 'unknown';
-  if (mode === 'unknown') {
-    return compiled;
-  }
-  while (index < tokens.length) {
-    var token = tokens[index];
-    switch (token.type) {
-      case 'text':
-        compiled.push(token.value);
-        break;
-      case 'list':
-        compiled.push(values[parseInt(token.value, 10)]);
-        break;
-      case 'named':
-        if (mode === 'named') {
-          compiled.push(values[token.value]);
-        } else {
-          if (true) {
-            console.warn("Type of token '".concat(token.type, "' and format of value '").concat(mode, "' don't match!"));
-          }
-        }
-        break;
-      case 'unknown':
-        if (true) {
-          console.warn("Detect 'unknown' type of token!");
-        }
-        break;
-    }
-    index++;
-  }
-  return compiled;
-}
-var LOCALE_ZH_HANS = 'zh-Hans';
-exports.LOCALE_ZH_HANS = LOCALE_ZH_HANS;
-var LOCALE_ZH_HANT = 'zh-Hant';
-exports.LOCALE_ZH_HANT = LOCALE_ZH_HANT;
-var LOCALE_EN = 'en';
-exports.LOCALE_EN = LOCALE_EN;
-var LOCALE_FR = 'fr';
-exports.LOCALE_FR = LOCALE_FR;
-var LOCALE_ES = 'es';
-exports.LOCALE_ES = LOCALE_ES;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var hasOwn = function hasOwn(val, key) {
-  return hasOwnProperty.call(val, key);
-};
-var defaultFormatter = new BaseFormatter();
-function include(str, parts) {
-  return !!parts.find(function (part) {
-    return str.indexOf(part) !== -1;
-  });
-}
-function startsWith(str, parts) {
-  return parts.find(function (part) {
-    return str.indexOf(part) === 0;
-  });
-}
-function normalizeLocale(locale, messages) {
-  if (!locale) {
-    return;
-  }
-  locale = locale.trim().replace(/_/g, '-');
-  if (messages && messages[locale]) {
-    return locale;
-  }
-  locale = locale.toLowerCase();
-  if (locale.indexOf('zh') === 0) {
-    if (locale.indexOf('-hans') > -1) {
-      return LOCALE_ZH_HANS;
-    }
-    if (locale.indexOf('-hant') > -1) {
-      return LOCALE_ZH_HANT;
-    }
-    if (include(locale, ['-tw', '-hk', '-mo', '-cht'])) {
-      return LOCALE_ZH_HANT;
-    }
-    return LOCALE_ZH_HANS;
-  }
-  var lang = startsWith(locale, [LOCALE_EN, LOCALE_FR, LOCALE_ES]);
-  if (lang) {
-    return lang;
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
   }
 }
-var I18n = /*#__PURE__*/function () {
-  function I18n(_ref3) {
-    var locale = _ref3.locale,
-      fallbackLocale = _ref3.fallbackLocale,
-      messages = _ref3.messages,
-      watcher = _ref3.watcher,
-      formater = _ref3.formater;
-    (0, _classCallCheck2.default)(this, I18n);
-    this.locale = LOCALE_EN;
-    this.fallbackLocale = LOCALE_EN;
-    this.message = {};
-    this.messages = {};
-    this.watchers = [];
-    if (fallbackLocale) {
-      this.fallbackLocale = fallbackLocale;
-    }
-    this.formater = formater || defaultFormatter;
-    this.messages = messages || {};
-    this.setLocale(locale || LOCALE_EN);
-    if (watcher) {
-      this.watchLocale(watcher);
-    }
-  }
-  (0, _createClass2.default)(I18n, [{
-    key: "setLocale",
-    value: function setLocale(locale) {
-      var _this = this;
-      var oldLocale = this.locale;
-      this.locale = normalizeLocale(locale, this.messages) || this.fallbackLocale;
-      if (!this.messages[this.locale]) {
-        // 可能初始化时不存在
-        this.messages[this.locale] = {};
-      }
-      this.message = this.messages[this.locale];
-      // 仅发生变化时，通知
-      if (oldLocale !== this.locale) {
-        this.watchers.forEach(function (watcher) {
-          watcher(_this.locale, oldLocale);
-        });
-      }
-    }
-  }, {
-    key: "getLocale",
-    value: function getLocale() {
-      return this.locale;
-    }
-  }, {
-    key: "watchLocale",
-    value: function watchLocale(fn) {
-      var _this2 = this;
-      var index = this.watchers.push(fn) - 1;
-      return function () {
-        _this2.watchers.splice(index, 1);
-      };
-    }
-  }, {
-    key: "add",
-    value: function add(locale, message) {
-      var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      var curMessages = this.messages[locale];
-      if (curMessages) {
-        if (override) {
-          Object.assign(curMessages, message);
-        } else {
-          Object.keys(message).forEach(function (key) {
-            if (!hasOwn(curMessages, key)) {
-              curMessages[key] = message[key];
-            }
-          });
-        }
-      } else {
-        this.messages[locale] = message;
-      }
-    }
-  }, {
-    key: "f",
-    value: function f(message, values, delimiters) {
-      return this.formater.interpolate(message, values, delimiters).join('');
-    }
-  }, {
-    key: "t",
-    value: function t(key, locale, values) {
-      var message = this.message;
-      if (typeof locale === 'string') {
-        locale = normalizeLocale(locale, this.messages);
-        locale && (message = this.messages[locale]);
-      } else {
-        values = locale;
-      }
-      if (!hasOwn(message, key)) {
-        console.warn("Cannot translate the value of keypath ".concat(key, ". Use the value of keypath as default."));
-        return key;
-      }
-      return this.formater.interpolate(message[key], values).join('');
-    }
-  }]);
-  return I18n;
-}();
-exports.I18n = I18n;
-function watchAppLocale(appVm, i18n) {
-  // 需要保证 watch 的触发在组件渲染之前
-  if (appVm.$watchLocale) {
-    // vue2
-    appVm.$watchLocale(function (newLocale) {
-      i18n.setLocale(newLocale);
-    });
-  } else {
-    appVm.$watch(function () {
-      return appVm.$locale;
-    }, function (newLocale) {
-      i18n.setLocale(newLocale);
-    });
-  }
-}
-function getDefaultLocale() {
-  if (typeof uni !== 'undefined' && uni.getLocale) {
-    return uni.getLocale();
-  }
-  // 小程序平台，uni 和 uni-i18n 互相引用，导致访问不到 uni，故在 global 上挂了 getLocale
-  if (typeof global !== 'undefined' && global.getLocale) {
-    return global.getLocale();
-  }
-  return LOCALE_EN;
-}
-function initVueI18n(locale) {
-  var messages = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var fallbackLocale = arguments.length > 2 ? arguments[2] : undefined;
-  var watcher = arguments.length > 3 ? arguments[3] : undefined;
-  // 兼容旧版本入参
-  if (typeof locale !== 'string') {
-    var _ref4 = [messages, locale];
-    locale = _ref4[0];
-    messages = _ref4[1];
-  }
-  if (typeof locale !== 'string') {
-    // 因为小程序平台，uni-i18n 和 uni 互相引用，导致此时访问 uni 时，为 undefined
-    locale = getDefaultLocale();
-  }
-  if (typeof fallbackLocale !== 'string') {
-    fallbackLocale = typeof __uniConfig !== 'undefined' && __uniConfig.fallbackLocale || LOCALE_EN;
-  }
-  var i18n = new I18n({
-    locale: locale,
-    fallbackLocale: fallbackLocale,
-    messages: messages,
-    watcher: watcher
-  });
-  var _t = function t(key, values) {
-    if (typeof getApp !== 'function') {
-      // app view
-      /* eslint-disable no-func-assign */
-      _t = function t(key, values) {
-        return i18n.t(key, values);
-      };
-    } else {
-      var isWatchedAppLocale = false;
-      _t = function t(key, values) {
-        var appVm = getApp().$vm;
-        // 可能$vm还不存在，比如在支付宝小程序中，组件定义较早，在props的default里使用了t()函数（如uni-goods-nav），此时app还未初始化
-        // options: {
-        // 	type: Array,
-        // 	default () {
-        // 		return [{
-        // 			icon: 'shop',
-        // 			text: t("uni-goods-nav.options.shop"),
-        // 		}, {
-        // 			icon: 'cart',
-        // 			text: t("uni-goods-nav.options.cart")
-        // 		}]
-        // 	}
-        // },
-        if (appVm) {
-          // 触发响应式
-          appVm.$locale;
-          if (!isWatchedAppLocale) {
-            isWatchedAppLocale = true;
-            watchAppLocale(appVm, i18n);
-          }
-        }
-        return i18n.t(key, values);
-      };
-    }
-    return _t(key, values);
-  };
-  return {
-    i18n: i18n,
-    f: function f(message, values, delimiters) {
-      return i18n.f(message, values, delimiters);
-    },
-    t: function t(key, values) {
-      return _t(key, values);
-    },
-    add: function add(locale, message) {
-      var override = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
-      return i18n.add(locale, message, override);
-    },
-    watch: function watch(fn) {
-      return i18n.watchLocale(fn);
-    },
-    getLocale: function getLocale() {
-      return i18n.getLocale();
-    },
-    setLocale: function setLocale(newLocale) {
-      return i18n.setLocale(newLocale);
-    }
-  };
-}
-var isString = function isString(val) {
-  return typeof val === 'string';
-};
-exports.isString = isString;
-var formater;
-function hasI18nJson(jsonObj, delimiters) {
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  return walkJsonObj(jsonObj, function (jsonObj, key) {
-    var value = jsonObj[key];
-    if (isString(value)) {
-      if (isI18nStr(value, delimiters)) {
-        return true;
-      }
-    } else {
-      return hasI18nJson(value, delimiters);
-    }
-  });
-}
-function parseI18nJson(jsonObj, values, delimiters) {
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  walkJsonObj(jsonObj, function (jsonObj, key) {
-    var value = jsonObj[key];
-    if (isString(value)) {
-      if (isI18nStr(value, delimiters)) {
-        jsonObj[key] = compileStr(value, values, delimiters);
-      }
-    } else {
-      parseI18nJson(value, values, delimiters);
-    }
-  });
-  return jsonObj;
-}
-function compileI18nJsonStr(jsonStr, _ref5) {
-  var locale = _ref5.locale,
-    locales = _ref5.locales,
-    delimiters = _ref5.delimiters;
-  if (!isI18nStr(jsonStr, delimiters)) {
-    return jsonStr;
-  }
-  if (!formater) {
-    formater = new BaseFormatter();
-  }
-  var localeValues = [];
-  Object.keys(locales).forEach(function (name) {
-    if (name !== locale) {
-      localeValues.push({
-        locale: name,
-        values: locales[name]
-      });
-    }
-  });
-  localeValues.unshift({
-    locale: locale,
-    values: locales[locale]
-  });
-  try {
-    return JSON.stringify(compileJsonObj(JSON.parse(jsonStr), localeValues, delimiters), null, 2);
-  } catch (e) {}
-  return jsonStr;
-}
-function isI18nStr(value, delimiters) {
-  return value.indexOf(delimiters[0]) > -1;
-}
-function compileStr(value, values, delimiters) {
-  return formater.interpolate(value, values, delimiters).join('');
-}
-function compileValue(jsonObj, key, localeValues, delimiters) {
-  var value = jsonObj[key];
-  if (isString(value)) {
-    // 存在国际化
-    if (isI18nStr(value, delimiters)) {
-      jsonObj[key] = compileStr(value, localeValues[0].values, delimiters);
-      if (localeValues.length > 1) {
-        // 格式化国际化语言
-        var valueLocales = jsonObj[key + 'Locales'] = {};
-        localeValues.forEach(function (localValue) {
-          valueLocales[localValue.locale] = compileStr(value, localValue.values, delimiters);
-        });
-      }
-    }
-  } else {
-    compileJsonObj(value, localeValues, delimiters);
-  }
-}
-function compileJsonObj(jsonObj, localeValues, delimiters) {
-  walkJsonObj(jsonObj, function (jsonObj, key) {
-    compileValue(jsonObj, key, localeValues, delimiters);
-  });
-  return jsonObj;
-}
-function walkJsonObj(jsonObj, walk) {
-  if (isArray(jsonObj)) {
-    for (var i = 0; i < jsonObj.length; i++) {
-      if (walk(jsonObj, i)) {
-        return true;
-      }
-    }
-  } else if (isObject(jsonObj)) {
-    for (var key in jsonObj) {
-      if (walk(jsonObj, key)) {
-        return true;
-      }
-    }
-  }
-  return false;
-}
-function resolveLocale(locales) {
-  return function (locale) {
-    if (!locale) {
-      return locale;
-    }
-    locale = normalizeLocale(locale) || locale;
-    return resolveLocaleChain(locale).find(function (locale) {
-      return locales.indexOf(locale) > -1;
-    });
-  };
-}
-function resolveLocaleChain(locale) {
-  var chain = [];
-  var tokens = locale.split('-');
-  while (tokens.length) {
-    chain.push(tokens.join('-'));
-    tokens.pop();
-  }
-  return chain;
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 2)))
+module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
-/***/ 212:
+/***/ 227:
 /*!******************************************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/index.js ***!
   \******************************************************************************************************/
@@ -12394,9 +12410,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 213));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 214));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 215));
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 228));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 229));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 230));
 var _default = {
   en: _en.default,
   'zh-Hans': _zhHans.default,
@@ -12406,7 +12422,7 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 213:
+/***/ 228:
 /*!*****************************************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/en.json ***!
   \*****************************************************************************************************/
@@ -12417,7 +12433,7 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"select date\"
 
 /***/ }),
 
-/***/ 214:
+/***/ 229:
 /*!**********************************************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hans.json ***!
   \**********************************************************************************************************/
@@ -12425,33 +12441,6 @@ module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"select date\"
 /***/ (function(module) {
 
 module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"选择日期\",\"uni-datetime-picker.selectTime\":\"选择时间\",\"uni-datetime-picker.selectDateTime\":\"选择日期时间\",\"uni-datetime-picker.startDate\":\"开始日期\",\"uni-datetime-picker.endDate\":\"结束日期\",\"uni-datetime-picker.startTime\":\"开始时间\",\"uni-datetime-picker.endTime\":\"结束时间\",\"uni-datetime-picker.ok\":\"确定\",\"uni-datetime-picker.clear\":\"清除\",\"uni-datetime-picker.cancel\":\"取消\",\"uni-datetime-picker.year\":\"年\",\"uni-datetime-picker.month\":\"月\",\"uni-calender.SUN\":\"日\",\"uni-calender.MON\":\"一\",\"uni-calender.TUE\":\"二\",\"uni-calender.WED\":\"三\",\"uni-calender.THU\":\"四\",\"uni-calender.FRI\":\"五\",\"uni-calender.SAT\":\"六\",\"uni-calender.confirm\":\"确认\"}");
-
-/***/ }),
-
-/***/ 215:
-/*!**********************************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
-  \**********************************************************************************************************/
-/*! exports provided: uni-datetime-picker.selectDate, uni-datetime-picker.selectTime, uni-datetime-picker.selectDateTime, uni-datetime-picker.startDate, uni-datetime-picker.endDate, uni-datetime-picker.startTime, uni-datetime-picker.endTime, uni-datetime-picker.ok, uni-datetime-picker.clear, uni-datetime-picker.cancel, uni-datetime-picker.year, uni-datetime-picker.month, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, uni-calender.confirm, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"選擇日期\",\"uni-datetime-picker.selectTime\":\"選擇時間\",\"uni-datetime-picker.selectDateTime\":\"選擇日期時間\",\"uni-datetime-picker.startDate\":\"開始日期\",\"uni-datetime-picker.endDate\":\"結束日期\",\"uni-datetime-picker.startTime\":\"開始时间\",\"uni-datetime-picker.endTime\":\"結束时间\",\"uni-datetime-picker.ok\":\"確定\",\"uni-datetime-picker.clear\":\"清除\",\"uni-datetime-picker.cancel\":\"取消\",\"uni-datetime-picker.year\":\"年\",\"uni-datetime-picker.month\":\"月\",\"uni-calender.SUN\":\"日\",\"uni-calender.MON\":\"一\",\"uni-calender.TUE\":\"二\",\"uni-calender.WED\":\"三\",\"uni-calender.THU\":\"四\",\"uni-calender.FRI\":\"五\",\"uni-calender.SAT\":\"六\",\"uni-calender.confirm\":\"確認\"}");
-
-/***/ }),
-
-/***/ 22:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/classCallCheck.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-module.exports = _classCallCheck, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
 
@@ -12486,517 +12475,12 @@ module.exports = _createClass, module.exports.__esModule = true, module.exports[
 
 /***/ 230:
 /*!**********************************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-file-picker/components/uni-file-picker/choose-and-upload-file.js ***!
+  !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/i18n/zh-Hant.json ***!
   \**********************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! exports provided: uni-datetime-picker.selectDate, uni-datetime-picker.selectTime, uni-datetime-picker.selectDateTime, uni-datetime-picker.startDate, uni-datetime-picker.endDate, uni-datetime-picker.startTime, uni-datetime-picker.endTime, uni-datetime-picker.ok, uni-datetime-picker.clear, uni-datetime-picker.cancel, uni-datetime-picker.year, uni-datetime-picker.month, uni-calender.SUN, uni-calender.MON, uni-calender.TUE, uni-calender.WED, uni-calender.THU, uni-calender.FRI, uni-calender.SAT, uni-calender.confirm, default */
+/***/ (function(module) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni, uniCloud) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.chooseAndUploadFile = chooseAndUploadFile;
-exports.uploadCloudFiles = uploadCloudFiles;
-var ERR_MSG_OK = 'chooseAndUploadFile:ok';
-var ERR_MSG_FAIL = 'chooseAndUploadFile:fail';
-function chooseImage(opts) {
-  var count = opts.count,
-    _opts$sizeType = opts.sizeType,
-    sizeType = _opts$sizeType === void 0 ? ['original', 'compressed'] : _opts$sizeType,
-    _opts$sourceType = opts.sourceType,
-    sourceType = _opts$sourceType === void 0 ? ['album', 'camera'] : _opts$sourceType,
-    extension = opts.extension;
-  return new Promise(function (resolve, reject) {
-    uni.chooseImage({
-      count: count,
-      sizeType: sizeType,
-      sourceType: sourceType,
-      extension: extension,
-      success: function success(res) {
-        resolve(normalizeChooseAndUploadFileRes(res, 'image'));
-      },
-      fail: function fail(res) {
-        reject({
-          errMsg: res.errMsg.replace('chooseImage:fail', ERR_MSG_FAIL)
-        });
-      }
-    });
-  });
-}
-function chooseVideo(opts) {
-  var camera = opts.camera,
-    compressed = opts.compressed,
-    maxDuration = opts.maxDuration,
-    _opts$sourceType2 = opts.sourceType,
-    sourceType = _opts$sourceType2 === void 0 ? ['album', 'camera'] : _opts$sourceType2,
-    extension = opts.extension;
-  return new Promise(function (resolve, reject) {
-    uni.chooseVideo({
-      camera: camera,
-      compressed: compressed,
-      maxDuration: maxDuration,
-      sourceType: sourceType,
-      extension: extension,
-      success: function success(res) {
-        var tempFilePath = res.tempFilePath,
-          duration = res.duration,
-          size = res.size,
-          height = res.height,
-          width = res.width;
-        resolve(normalizeChooseAndUploadFileRes({
-          errMsg: 'chooseVideo:ok',
-          tempFilePaths: [tempFilePath],
-          tempFiles: [{
-            name: res.tempFile && res.tempFile.name || '',
-            path: tempFilePath,
-            size: size,
-            type: res.tempFile && res.tempFile.type || '',
-            width: width,
-            height: height,
-            duration: duration,
-            fileType: 'video',
-            cloudPath: ''
-          }]
-        }, 'video'));
-      },
-      fail: function fail(res) {
-        reject({
-          errMsg: res.errMsg.replace('chooseVideo:fail', ERR_MSG_FAIL)
-        });
-      }
-    });
-  });
-}
-function chooseAll(opts) {
-  var count = opts.count,
-    extension = opts.extension;
-  return new Promise(function (resolve, reject) {
-    var chooseFile = uni.chooseFile;
-    if (typeof wx !== 'undefined' && typeof wx.chooseMessageFile === 'function') {
-      chooseFile = wx.chooseMessageFile;
-    }
-    if (typeof chooseFile !== 'function') {
-      return reject({
-        errMsg: ERR_MSG_FAIL + ' 请指定 type 类型，该平台仅支持选择 image 或 video。'
-      });
-    }
-    chooseFile({
-      type: 'all',
-      count: count,
-      extension: extension,
-      success: function success(res) {
-        resolve(normalizeChooseAndUploadFileRes(res));
-      },
-      fail: function fail(res) {
-        reject({
-          errMsg: res.errMsg.replace('chooseFile:fail', ERR_MSG_FAIL)
-        });
-      }
-    });
-  });
-}
-function normalizeChooseAndUploadFileRes(res, fileType) {
-  res.tempFiles.forEach(function (item, index) {
-    if (!item.name) {
-      item.name = item.path.substring(item.path.lastIndexOf('/') + 1);
-    }
-    if (fileType) {
-      item.fileType = fileType;
-    }
-    item.cloudPath = Date.now() + '_' + index + item.name.substring(item.name.lastIndexOf('.'));
-  });
-  if (!res.tempFilePaths) {
-    res.tempFilePaths = res.tempFiles.map(function (file) {
-      return file.path;
-    });
-  }
-  return res;
-}
-function uploadCloudFiles(files) {
-  var max = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5;
-  var _onUploadProgress = arguments.length > 2 ? arguments[2] : undefined;
-  files = JSON.parse(JSON.stringify(files));
-  var len = files.length;
-  var count = 0;
-  var self = this;
-  return new Promise(function (resolve) {
-    while (count < max) {
-      next();
-    }
-    function next() {
-      var cur = count++;
-      if (cur >= len) {
-        !files.find(function (item) {
-          return !item.url && !item.errMsg;
-        }) && resolve(files);
-        return;
-      }
-      var fileItem = files[cur];
-      var index = self.files.findIndex(function (v) {
-        return v.uuid === fileItem.uuid;
-      });
-      fileItem.url = '';
-      delete fileItem.errMsg;
-      uniCloud.uploadFile({
-        filePath: fileItem.path,
-        cloudPath: fileItem.cloudPath,
-        fileType: fileItem.fileType,
-        onUploadProgress: function onUploadProgress(res) {
-          res.index = index;
-          _onUploadProgress && _onUploadProgress(res);
-        }
-      }).then(function (res) {
-        fileItem.url = res.fileID;
-        fileItem.index = index;
-        if (cur < len) {
-          next();
-        }
-      }).catch(function (res) {
-        fileItem.errMsg = res.errMsg || res.message;
-        fileItem.index = index;
-        if (cur < len) {
-          next();
-        }
-      });
-    }
-  });
-}
-function uploadFiles(choosePromise, _ref) {
-  var onChooseFile = _ref.onChooseFile,
-    onUploadProgress = _ref.onUploadProgress;
-  return choosePromise.then(function (res) {
-    if (onChooseFile) {
-      var customChooseRes = onChooseFile(res);
-      if (typeof customChooseRes !== 'undefined') {
-        return Promise.resolve(customChooseRes).then(function (chooseRes) {
-          return typeof chooseRes === 'undefined' ? res : chooseRes;
-        });
-      }
-    }
-    return res;
-  }).then(function (res) {
-    if (res === false) {
-      return {
-        errMsg: ERR_MSG_OK,
-        tempFilePaths: [],
-        tempFiles: []
-      };
-    }
-    return res;
-  });
-}
-function chooseAndUploadFile() {
-  var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
-    type: 'all'
-  };
-  if (opts.type === 'image') {
-    return uploadFiles(chooseImage(opts), opts);
-  } else if (opts.type === 'video') {
-    return uploadFiles(chooseVideo(opts), opts);
-  }
-  return uploadFiles(chooseAll(opts), opts);
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 200)["default"]))
-
-/***/ }),
-
-/***/ 231:
-/*!*****************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-file-picker/components/uni-file-picker/utils.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.get_files_and_is_max = exports.get_file_info = exports.get_file_ext = exports.get_file_data = exports.get_extname = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 25));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 27));
-/**
- * 获取文件名和后缀
- * @param {String} name
- */
-var get_file_ext = function get_file_ext(name) {
-  var last_len = name.lastIndexOf('.');
-  var len = name.length;
-  return {
-    name: name.substring(0, last_len),
-    ext: name.substring(last_len + 1, len)
-  };
-};
-
-/**
- * 获取扩展名
- * @param {Array} fileExtname
- */
-exports.get_file_ext = get_file_ext;
-var get_extname = function get_extname(fileExtname) {
-  if (!Array.isArray(fileExtname)) {
-    var extname = fileExtname.replace(/(\[|\])/g, '');
-    return extname.split(',');
-  } else {
-    return fileExtname;
-  }
-  return [];
-};
-
-/**
- * 获取文件和检测是否可选
- */
-exports.get_extname = get_extname;
-var get_files_and_is_max = function get_files_and_is_max(res, _extname) {
-  var filePaths = [];
-  var files = [];
-  if (!_extname || _extname.length === 0) {
-    return {
-      filePaths: filePaths,
-      files: files
-    };
-  }
-  res.tempFiles.forEach(function (v) {
-    var fileFullName = get_file_ext(v.name);
-    var extname = fileFullName.ext.toLowerCase();
-    if (_extname.indexOf(extname) !== -1) {
-      files.push(v);
-      filePaths.push(v.path);
-    }
-  });
-  if (files.length !== res.tempFiles.length) {
-    uni.showToast({
-      title: "\u5F53\u524D\u9009\u62E9\u4E86".concat(res.tempFiles.length, "\u4E2A\u6587\u4EF6 \uFF0C").concat(res.tempFiles.length - files.length, " \u4E2A\u6587\u4EF6\u683C\u5F0F\u4E0D\u6B63\u786E"),
-      icon: 'none',
-      duration: 5000
-    });
-  }
-  return {
-    filePaths: filePaths,
-    files: files
-  };
-};
-
-/**
- * 获取图片信息
- * @param {Object} filepath
- */
-exports.get_files_and_is_max = get_files_and_is_max;
-var get_file_info = function get_file_info(filepath) {
-  return new Promise(function (resolve, reject) {
-    uni.getImageInfo({
-      src: filepath,
-      success: function success(res) {
-        resolve(res);
-      },
-      fail: function fail(err) {
-        reject(err);
-      }
-    });
-  });
-};
-/**
- * 获取封装数据
- */
-exports.get_file_info = get_file_info;
-var get_file_data = /*#__PURE__*/function () {
-  var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(files) {
-    var type,
-      fileFullName,
-      extname,
-      filedata,
-      imageinfo,
-      _args = arguments;
-    return _regenerator.default.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            type = _args.length > 1 && _args[1] !== undefined ? _args[1] : 'image';
-            // 最终需要上传数据库的数据
-            fileFullName = get_file_ext(files.name);
-            extname = fileFullName.ext.toLowerCase();
-            filedata = {
-              name: files.name,
-              uuid: files.uuid,
-              extname: extname || '',
-              cloudPath: files.cloudPath,
-              fileType: files.fileType,
-              url: files.path || files.path,
-              size: files.size,
-              //单位是字节
-              image: {},
-              path: files.path,
-              video: {}
-            };
-            if (!(type === 'image')) {
-              _context.next = 14;
-              break;
-            }
-            _context.next = 7;
-            return get_file_info(files.path);
-          case 7:
-            imageinfo = _context.sent;
-            delete filedata.video;
-            filedata.image.width = imageinfo.width;
-            filedata.image.height = imageinfo.height;
-            filedata.image.location = imageinfo.path;
-            _context.next = 15;
-            break;
-          case 14:
-            delete filedata.image;
-          case 15:
-            return _context.abrupt("return", filedata);
-          case 16:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-  return function get_file_data(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
-exports.get_file_data = get_file_data;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
-
-/***/ }),
-
-/***/ 239:
-/*!*************************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \*************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.createAnimation = createAnimation;
-var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 10));
-var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
-var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-// const defaultOption = {
-// 	duration: 300,
-// 	timingFunction: 'linear',
-// 	delay: 0,
-// 	transformOrigin: '50% 50% 0'
-// }
-var MPAnimation = /*#__PURE__*/function () {
-  function MPAnimation(options, _this) {
-    (0, _classCallCheck2.default)(this, MPAnimation);
-    this.options = options;
-    this.animation = uni.createAnimation(options);
-    this.currentStepAnimates = {};
-    this.next = 0;
-    this.$ = _this;
-  }
-  (0, _createClass2.default)(MPAnimation, [{
-    key: "_nvuePushAnimates",
-    value: function _nvuePushAnimates(type, args) {
-      var aniObj = this.currentStepAnimates[this.next];
-      var styles = {};
-      if (!aniObj) {
-        styles = {
-          styles: {},
-          config: {}
-        };
-      } else {
-        styles = aniObj;
-      }
-      if (animateTypes1.includes(type)) {
-        if (!styles.styles.transform) {
-          styles.styles.transform = '';
-        }
-        var unit = '';
-        if (type === 'rotate') {
-          unit = 'deg';
-        }
-        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
-      } else {
-        styles.styles[type] = "".concat(args);
-      }
-      this.currentStepAnimates[this.next] = styles;
-    }
-  }, {
-    key: "_animateRun",
-    value: function _animateRun() {
-      var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var ref = this.$.$refs['ani'].ref;
-      if (!ref) return;
-      return new Promise(function (resolve, reject) {
-        nvueAnimation.transition(ref, _objectSpread({
-          styles: styles
-        }, config), function (res) {
-          resolve();
-        });
-      });
-    }
-  }, {
-    key: "_nvueNextAnimate",
-    value: function _nvueNextAnimate(animates) {
-      var _this2 = this;
-      var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-      var fn = arguments.length > 2 ? arguments[2] : undefined;
-      var obj = animates[step];
-      if (obj) {
-        var styles = obj.styles,
-          config = obj.config;
-        this._animateRun(styles, config).then(function () {
-          step += 1;
-          _this2._nvueNextAnimate(animates, step, fn);
-        });
-      } else {
-        this.currentStepAnimates = {};
-        typeof fn === 'function' && fn();
-        this.isEnd = true;
-      }
-    }
-  }, {
-    key: "step",
-    value: function step() {
-      var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      this.animation.step(config);
-      return this;
-    }
-  }, {
-    key: "run",
-    value: function run(fn) {
-      this.$.animationData = this.animation.export();
-      this.$.timer = setTimeout(function () {
-        typeof fn === 'function' && fn();
-      }, this.$.durationTime);
-    }
-  }]);
-  return MPAnimation;
-}();
-var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d', 'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY', 'translateZ'];
-var animateTypes2 = ['opacity', 'backgroundColor'];
-var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
-animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
-  MPAnimation.prototype[type] = function () {
-    var _this$animation;
-    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
-    return this;
-  };
-});
-function createAnimation(option, _this) {
-  if (!_this) return;
-  clearTimeout(_this.timer);
-  return new MPAnimation(option, _this);
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+module.exports = JSON.parse("{\"uni-datetime-picker.selectDate\":\"選擇日期\",\"uni-datetime-picker.selectTime\":\"選擇時間\",\"uni-datetime-picker.selectDateTime\":\"選擇日期時間\",\"uni-datetime-picker.startDate\":\"開始日期\",\"uni-datetime-picker.endDate\":\"結束日期\",\"uni-datetime-picker.startTime\":\"開始时间\",\"uni-datetime-picker.endTime\":\"結束时间\",\"uni-datetime-picker.ok\":\"確定\",\"uni-datetime-picker.clear\":\"清除\",\"uni-datetime-picker.cancel\":\"取消\",\"uni-datetime-picker.year\":\"年\",\"uni-datetime-picker.month\":\"月\",\"uni-calender.SUN\":\"日\",\"uni-calender.MON\":\"一\",\"uni-calender.TUE\":\"二\",\"uni-calender.WED\":\"三\",\"uni-calender.THU\":\"四\",\"uni-calender.FRI\":\"五\",\"uni-calender.SAT\":\"六\",\"uni-calender.confirm\":\"確認\"}");
 
 /***/ }),
 
@@ -19082,62 +18566,384 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 245:
-/*!******************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
-  \******************************************************************************************/
+/*!**********************************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-file-picker/components/uni-file-picker/choose-and-upload-file.js ***!
+  \**********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(uni, uniCloud) {
 
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
-var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 246));
-var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 247));
-var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 248));
-var _default = {
-  en: _en.default,
-  'zh-Hans': _zhHans.default,
-  'zh-Hant': _zhHant.default
-};
-exports.default = _default;
+exports.chooseAndUploadFile = chooseAndUploadFile;
+exports.uploadCloudFiles = uploadCloudFiles;
+var ERR_MSG_OK = 'chooseAndUploadFile:ok';
+var ERR_MSG_FAIL = 'chooseAndUploadFile:fail';
+function chooseImage(opts) {
+  var count = opts.count,
+    _opts$sizeType = opts.sizeType,
+    sizeType = _opts$sizeType === void 0 ? ['original', 'compressed'] : _opts$sizeType,
+    _opts$sourceType = opts.sourceType,
+    sourceType = _opts$sourceType === void 0 ? ['album', 'camera'] : _opts$sourceType,
+    extension = opts.extension;
+  return new Promise(function (resolve, reject) {
+    uni.chooseImage({
+      count: count,
+      sizeType: sizeType,
+      sourceType: sourceType,
+      extension: extension,
+      success: function success(res) {
+        resolve(normalizeChooseAndUploadFileRes(res, 'image'));
+      },
+      fail: function fail(res) {
+        reject({
+          errMsg: res.errMsg.replace('chooseImage:fail', ERR_MSG_FAIL)
+        });
+      }
+    });
+  });
+}
+function chooseVideo(opts) {
+  var camera = opts.camera,
+    compressed = opts.compressed,
+    maxDuration = opts.maxDuration,
+    _opts$sourceType2 = opts.sourceType,
+    sourceType = _opts$sourceType2 === void 0 ? ['album', 'camera'] : _opts$sourceType2,
+    extension = opts.extension;
+  return new Promise(function (resolve, reject) {
+    uni.chooseVideo({
+      camera: camera,
+      compressed: compressed,
+      maxDuration: maxDuration,
+      sourceType: sourceType,
+      extension: extension,
+      success: function success(res) {
+        var tempFilePath = res.tempFilePath,
+          duration = res.duration,
+          size = res.size,
+          height = res.height,
+          width = res.width;
+        resolve(normalizeChooseAndUploadFileRes({
+          errMsg: 'chooseVideo:ok',
+          tempFilePaths: [tempFilePath],
+          tempFiles: [{
+            name: res.tempFile && res.tempFile.name || '',
+            path: tempFilePath,
+            size: size,
+            type: res.tempFile && res.tempFile.type || '',
+            width: width,
+            height: height,
+            duration: duration,
+            fileType: 'video',
+            cloudPath: ''
+          }]
+        }, 'video'));
+      },
+      fail: function fail(res) {
+        reject({
+          errMsg: res.errMsg.replace('chooseVideo:fail', ERR_MSG_FAIL)
+        });
+      }
+    });
+  });
+}
+function chooseAll(opts) {
+  var count = opts.count,
+    extension = opts.extension;
+  return new Promise(function (resolve, reject) {
+    var chooseFile = uni.chooseFile;
+    if (typeof wx !== 'undefined' && typeof wx.chooseMessageFile === 'function') {
+      chooseFile = wx.chooseMessageFile;
+    }
+    if (typeof chooseFile !== 'function') {
+      return reject({
+        errMsg: ERR_MSG_FAIL + ' 请指定 type 类型，该平台仅支持选择 image 或 video。'
+      });
+    }
+    chooseFile({
+      type: 'all',
+      count: count,
+      extension: extension,
+      success: function success(res) {
+        resolve(normalizeChooseAndUploadFileRes(res));
+      },
+      fail: function fail(res) {
+        reject({
+          errMsg: res.errMsg.replace('chooseFile:fail', ERR_MSG_FAIL)
+        });
+      }
+    });
+  });
+}
+function normalizeChooseAndUploadFileRes(res, fileType) {
+  res.tempFiles.forEach(function (item, index) {
+    if (!item.name) {
+      item.name = item.path.substring(item.path.lastIndexOf('/') + 1);
+    }
+    if (fileType) {
+      item.fileType = fileType;
+    }
+    item.cloudPath = Date.now() + '_' + index + item.name.substring(item.name.lastIndexOf('.'));
+  });
+  if (!res.tempFilePaths) {
+    res.tempFilePaths = res.tempFiles.map(function (file) {
+      return file.path;
+    });
+  }
+  return res;
+}
+function uploadCloudFiles(files) {
+  var max = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 5;
+  var _onUploadProgress = arguments.length > 2 ? arguments[2] : undefined;
+  files = JSON.parse(JSON.stringify(files));
+  var len = files.length;
+  var count = 0;
+  var self = this;
+  return new Promise(function (resolve) {
+    while (count < max) {
+      next();
+    }
+    function next() {
+      var cur = count++;
+      if (cur >= len) {
+        !files.find(function (item) {
+          return !item.url && !item.errMsg;
+        }) && resolve(files);
+        return;
+      }
+      var fileItem = files[cur];
+      var index = self.files.findIndex(function (v) {
+        return v.uuid === fileItem.uuid;
+      });
+      fileItem.url = '';
+      delete fileItem.errMsg;
+      uniCloud.uploadFile({
+        filePath: fileItem.path,
+        cloudPath: fileItem.cloudPath,
+        fileType: fileItem.fileType,
+        onUploadProgress: function onUploadProgress(res) {
+          res.index = index;
+          _onUploadProgress && _onUploadProgress(res);
+        }
+      }).then(function (res) {
+        fileItem.url = res.fileID;
+        fileItem.index = index;
+        if (cur < len) {
+          next();
+        }
+      }).catch(function (res) {
+        fileItem.errMsg = res.errMsg || res.message;
+        fileItem.index = index;
+        if (cur < len) {
+          next();
+        }
+      });
+    }
+  });
+}
+function uploadFiles(choosePromise, _ref) {
+  var onChooseFile = _ref.onChooseFile,
+    onUploadProgress = _ref.onUploadProgress;
+  return choosePromise.then(function (res) {
+    if (onChooseFile) {
+      var customChooseRes = onChooseFile(res);
+      if (typeof customChooseRes !== 'undefined') {
+        return Promise.resolve(customChooseRes).then(function (chooseRes) {
+          return typeof chooseRes === 'undefined' ? res : chooseRes;
+        });
+      }
+    }
+    return res;
+  }).then(function (res) {
+    if (res === false) {
+      return {
+        errMsg: ERR_MSG_OK,
+        tempFilePaths: [],
+        tempFiles: []
+      };
+    }
+    return res;
+  });
+}
+function chooseAndUploadFile() {
+  var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+    type: 'all'
+  };
+  if (opts.type === 'image') {
+    return uploadFiles(chooseImage(opts), opts);
+  } else if (opts.type === 'video') {
+    return uploadFiles(chooseVideo(opts), opts);
+  }
+  return uploadFiles(chooseAll(opts), opts);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/uni-cloud/dist/index.js */ 215)["default"]))
 
 /***/ }),
 
 /***/ 246:
 /*!*****************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json ***!
+  !*** C:/Data/ZW/applet/uni_modules/uni-file-picker/components/uni-file-picker/utils.js ***!
   \*****************************************************************************************/
-/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
-/***/ (function(module) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"Pull up to show more\",\"uni-load-more.contentrefresh\":\"loading...\",\"uni-load-more.contentnomore\":\"No more data\"}");
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
 
-/***/ }),
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.get_files_and_is_max = exports.get_file_info = exports.get_file_ext = exports.get_file_data = exports.get_extname = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 25));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 27));
+/**
+ * 获取文件名和后缀
+ * @param {String} name
+ */
+var get_file_ext = function get_file_ext(name) {
+  var last_len = name.lastIndexOf('.');
+  var len = name.length;
+  return {
+    name: name.substring(0, last_len),
+    ext: name.substring(last_len + 1, len)
+  };
+};
 
-/***/ 247:
-/*!**********************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json ***!
-  \**********************************************************************************************/
-/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
-/***/ (function(module) {
+/**
+ * 获取扩展名
+ * @param {Array} fileExtname
+ */
+exports.get_file_ext = get_file_ext;
+var get_extname = function get_extname(fileExtname) {
+  if (!Array.isArray(fileExtname)) {
+    var extname = fileExtname.replace(/(\[|\])/g, '');
+    return extname.split(',');
+  } else {
+    return fileExtname;
+  }
+  return [];
+};
 
-module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉显示更多\",\"uni-load-more.contentrefresh\":\"正在加载...\",\"uni-load-more.contentnomore\":\"没有更多数据了\"}");
+/**
+ * 获取文件和检测是否可选
+ */
+exports.get_extname = get_extname;
+var get_files_and_is_max = function get_files_and_is_max(res, _extname) {
+  var filePaths = [];
+  var files = [];
+  if (!_extname || _extname.length === 0) {
+    return {
+      filePaths: filePaths,
+      files: files
+    };
+  }
+  res.tempFiles.forEach(function (v) {
+    var fileFullName = get_file_ext(v.name);
+    var extname = fileFullName.ext.toLowerCase();
+    if (_extname.indexOf(extname) !== -1) {
+      files.push(v);
+      filePaths.push(v.path);
+    }
+  });
+  if (files.length !== res.tempFiles.length) {
+    uni.showToast({
+      title: "\u5F53\u524D\u9009\u62E9\u4E86".concat(res.tempFiles.length, "\u4E2A\u6587\u4EF6 \uFF0C").concat(res.tempFiles.length - files.length, " \u4E2A\u6587\u4EF6\u683C\u5F0F\u4E0D\u6B63\u786E"),
+      icon: 'none',
+      duration: 5000
+    });
+  }
+  return {
+    filePaths: filePaths,
+    files: files
+  };
+};
 
-/***/ }),
-
-/***/ 248:
-/*!**********************************************************************************************!*\
-  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json ***!
-  \**********************************************************************************************/
-/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉顯示更多\",\"uni-load-more.contentrefresh\":\"正在加載...\",\"uni-load-more.contentnomore\":\"沒有更多數據了\"}");
+/**
+ * 获取图片信息
+ * @param {Object} filepath
+ */
+exports.get_files_and_is_max = get_files_and_is_max;
+var get_file_info = function get_file_info(filepath) {
+  return new Promise(function (resolve, reject) {
+    uni.getImageInfo({
+      src: filepath,
+      success: function success(res) {
+        resolve(res);
+      },
+      fail: function fail(err) {
+        reject(err);
+      }
+    });
+  });
+};
+/**
+ * 获取封装数据
+ */
+exports.get_file_info = get_file_info;
+var get_file_data = /*#__PURE__*/function () {
+  var _ref = (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee(files) {
+    var type,
+      fileFullName,
+      extname,
+      filedata,
+      imageinfo,
+      _args = arguments;
+    return _regenerator.default.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            type = _args.length > 1 && _args[1] !== undefined ? _args[1] : 'image';
+            // 最终需要上传数据库的数据
+            fileFullName = get_file_ext(files.name);
+            extname = fileFullName.ext.toLowerCase();
+            filedata = {
+              name: files.name,
+              uuid: files.uuid,
+              extname: extname || '',
+              cloudPath: files.cloudPath,
+              fileType: files.fileType,
+              url: files.path || files.path,
+              size: files.size,
+              //单位是字节
+              image: {},
+              path: files.path,
+              video: {}
+            };
+            if (!(type === 'image')) {
+              _context.next = 14;
+              break;
+            }
+            _context.next = 7;
+            return get_file_info(files.path);
+          case 7:
+            imageinfo = _context.sent;
+            delete filedata.video;
+            filedata.image.width = imageinfo.width;
+            filedata.image.height = imageinfo.height;
+            filedata.image.location = imageinfo.path;
+            _context.next = 15;
+            break;
+          case 14:
+            delete filedata.image;
+          case 15:
+            return _context.abrupt("return", filedata);
+          case 16:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return function get_file_data(_x) {
+    return _ref.apply(this, arguments);
+  };
+}();
+exports.get_file_data = get_file_data;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
@@ -19155,7 +18961,564 @@ module.exports = runtime;
 
 /***/ }),
 
-/***/ 256:
+/***/ 254:
+/*!*************************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
+  \*************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createAnimation = createAnimation;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 10));
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 22));
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 23));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+// const defaultOption = {
+// 	duration: 300,
+// 	timingFunction: 'linear',
+// 	delay: 0,
+// 	transformOrigin: '50% 50% 0'
+// }
+var MPAnimation = /*#__PURE__*/function () {
+  function MPAnimation(options, _this) {
+    (0, _classCallCheck2.default)(this, MPAnimation);
+    this.options = options;
+    this.animation = uni.createAnimation(options);
+    this.currentStepAnimates = {};
+    this.next = 0;
+    this.$ = _this;
+  }
+  (0, _createClass2.default)(MPAnimation, [{
+    key: "_nvuePushAnimates",
+    value: function _nvuePushAnimates(type, args) {
+      var aniObj = this.currentStepAnimates[this.next];
+      var styles = {};
+      if (!aniObj) {
+        styles = {
+          styles: {},
+          config: {}
+        };
+      } else {
+        styles = aniObj;
+      }
+      if (animateTypes1.includes(type)) {
+        if (!styles.styles.transform) {
+          styles.styles.transform = '';
+        }
+        var unit = '';
+        if (type === 'rotate') {
+          unit = 'deg';
+        }
+        styles.styles.transform += "".concat(type, "(").concat(args + unit, ") ");
+      } else {
+        styles.styles[type] = "".concat(args);
+      }
+      this.currentStepAnimates[this.next] = styles;
+    }
+  }, {
+    key: "_animateRun",
+    value: function _animateRun() {
+      var styles = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var ref = this.$.$refs['ani'].ref;
+      if (!ref) return;
+      return new Promise(function (resolve, reject) {
+        nvueAnimation.transition(ref, _objectSpread({
+          styles: styles
+        }, config), function (res) {
+          resolve();
+        });
+      });
+    }
+  }, {
+    key: "_nvueNextAnimate",
+    value: function _nvueNextAnimate(animates) {
+      var _this2 = this;
+      var step = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var fn = arguments.length > 2 ? arguments[2] : undefined;
+      var obj = animates[step];
+      if (obj) {
+        var styles = obj.styles,
+          config = obj.config;
+        this._animateRun(styles, config).then(function () {
+          step += 1;
+          _this2._nvueNextAnimate(animates, step, fn);
+        });
+      } else {
+        this.currentStepAnimates = {};
+        typeof fn === 'function' && fn();
+        this.isEnd = true;
+      }
+    }
+  }, {
+    key: "step",
+    value: function step() {
+      var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      this.animation.step(config);
+      return this;
+    }
+  }, {
+    key: "run",
+    value: function run(fn) {
+      this.$.animationData = this.animation.export();
+      this.$.timer = setTimeout(function () {
+        typeof fn === 'function' && fn();
+      }, this.$.durationTime);
+    }
+  }]);
+  return MPAnimation;
+}();
+var animateTypes1 = ['matrix', 'matrix3d', 'rotate', 'rotate3d', 'rotateX', 'rotateY', 'rotateZ', 'scale', 'scale3d', 'scaleX', 'scaleY', 'scaleZ', 'skew', 'skewX', 'skewY', 'translate', 'translate3d', 'translateX', 'translateY', 'translateZ'];
+var animateTypes2 = ['opacity', 'backgroundColor'];
+var animateTypes3 = ['width', 'height', 'left', 'right', 'top', 'bottom'];
+animateTypes1.concat(animateTypes2, animateTypes3).forEach(function (type) {
+  MPAnimation.prototype[type] = function () {
+    var _this$animation;
+    (_this$animation = this.animation)[type].apply(_this$animation, arguments);
+    return this;
+  };
+});
+function createAnimation(option, _this) {
+  if (!_this) return;
+  clearTimeout(_this.timer);
+  return new MPAnimation(option, _this);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+
+/***/ 26:
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var _typeof = __webpack_require__(/*! ./typeof.js */ 12)["default"];
+function _regeneratorRuntime() {
+  "use strict";
+
+  /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+  module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
+    return exports;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  var exports = {},
+    Op = Object.prototype,
+    hasOwn = Op.hasOwnProperty,
+    defineProperty = Object.defineProperty || function (obj, key, desc) {
+      obj[key] = desc.value;
+    },
+    $Symbol = "function" == typeof Symbol ? Symbol : {},
+    iteratorSymbol = $Symbol.iterator || "@@iterator",
+    asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
+    toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+  function define(obj, key, value) {
+    return Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: !0,
+      configurable: !0,
+      writable: !0
+    }), obj[key];
+  }
+  try {
+    define({}, "");
+  } catch (err) {
+    define = function define(obj, key, value) {
+      return obj[key] = value;
+    };
+  }
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
+      generator = Object.create(protoGenerator.prototype),
+      context = new Context(tryLocsList || []);
+    return defineProperty(generator, "_invoke", {
+      value: makeInvokeMethod(innerFn, self, context)
+    }), generator;
+  }
+  function tryCatch(fn, obj, arg) {
+    try {
+      return {
+        type: "normal",
+        arg: fn.call(obj, arg)
+      };
+    } catch (err) {
+      return {
+        type: "throw",
+        arg: err
+      };
+    }
+  }
+  exports.wrap = wrap;
+  var ContinueSentinel = {};
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+  var IteratorPrototype = {};
+  define(IteratorPrototype, iteratorSymbol, function () {
+    return this;
+  });
+  var getProto = Object.getPrototypeOf,
+    NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
+  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function (method) {
+      define(prototype, method, function (arg) {
+        return this._invoke(method, arg);
+      });
+    });
+  }
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if ("throw" !== record.type) {
+        var result = record.arg,
+          value = result.value;
+        return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
+          invoke("next", value, resolve, reject);
+        }, function (err) {
+          invoke("throw", err, resolve, reject);
+        }) : PromiseImpl.resolve(value).then(function (unwrapped) {
+          result.value = unwrapped, resolve(result);
+        }, function (error) {
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+      reject(record.arg);
+    }
+    var previousPromise;
+    defineProperty(this, "_invoke", {
+      value: function value(method, arg) {
+        function callInvokeWithMethodAndArg() {
+          return new PromiseImpl(function (resolve, reject) {
+            invoke(method, arg, resolve, reject);
+          });
+        }
+        return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
+      }
+    });
+  }
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = "suspendedStart";
+    return function (method, arg) {
+      if ("executing" === state) throw new Error("Generator is already running");
+      if ("completed" === state) {
+        if ("throw" === method) throw arg;
+        return doneResult();
+      }
+      for (context.method = method, context.arg = arg;;) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+        if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
+          if ("suspendedStart" === state) throw state = "completed", context.arg;
+          context.dispatchException(context.arg);
+        } else "return" === context.method && context.abrupt("return", context.arg);
+        state = "executing";
+        var record = tryCatch(innerFn, self, context);
+        if ("normal" === record.type) {
+          if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
+          return {
+            value: record.arg,
+            done: context.done
+          };
+        }
+        "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
+      }
+    };
+  }
+  function maybeInvokeDelegate(delegate, context) {
+    var methodName = context.method,
+      method = delegate.iterator[methodName];
+    if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel;
+    var record = tryCatch(method, delegate.iterator, context.arg);
+    if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
+    var info = record.arg;
+    return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
+  }
+  function pushTryEntry(locs) {
+    var entry = {
+      tryLoc: locs[0]
+    };
+    1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
+  }
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal", delete record.arg, entry.completion = record;
+  }
+  function Context(tryLocsList) {
+    this.tryEntries = [{
+      tryLoc: "root"
+    }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
+  }
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) return iteratorMethod.call(iterable);
+      if ("function" == typeof iterable.next) return iterable;
+      if (!isNaN(iterable.length)) {
+        var i = -1,
+          next = function next() {
+            for (; ++i < iterable.length;) {
+              if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
+            }
+            return next.value = undefined, next.done = !0, next;
+          };
+        return next.next = next;
+      }
+    }
+    return {
+      next: doneResult
+    };
+  }
+  function doneResult() {
+    return {
+      value: undefined,
+      done: !0
+    };
+  }
+  return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", {
+    value: GeneratorFunctionPrototype,
+    configurable: !0
+  }), defineProperty(GeneratorFunctionPrototype, "constructor", {
+    value: GeneratorFunction,
+    configurable: !0
+  }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
+    var ctor = "function" == typeof genFun && genFun.constructor;
+    return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
+  }, exports.mark = function (genFun) {
+    return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
+  }, exports.awrap = function (arg) {
+    return {
+      __await: arg
+    };
+  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
+    return this;
+  }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    void 0 === PromiseImpl && (PromiseImpl = Promise);
+    var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
+    return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
+      return result.done ? result.value : iter.next();
+    });
+  }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
+    return this;
+  }), define(Gp, "toString", function () {
+    return "[object Generator]";
+  }), exports.keys = function (val) {
+    var object = Object(val),
+      keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    return keys.reverse(), function next() {
+      for (; keys.length;) {
+        var key = keys.pop();
+        if (key in object) return next.value = key, next.done = !1, next;
+      }
+      return next.done = !0, next;
+    };
+  }, exports.values = values, Context.prototype = {
+    constructor: Context,
+    reset: function reset(skipTempReset) {
+      if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) {
+        "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
+      }
+    },
+    stop: function stop() {
+      this.done = !0;
+      var rootRecord = this.tryEntries[0].completion;
+      if ("throw" === rootRecord.type) throw rootRecord.arg;
+      return this.rval;
+    },
+    dispatchException: function dispatchException(exception) {
+      if (this.done) throw exception;
+      var context = this;
+      function handle(loc, caught) {
+        return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
+      }
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i],
+          record = entry.completion;
+        if ("root" === entry.tryLoc) return handle("end");
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc"),
+            hasFinally = hasOwn.call(entry, "finallyLoc");
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
+          } else {
+            if (!hasFinally) throw new Error("try statement without catch or finally");
+            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
+          }
+        }
+      }
+    },
+    abrupt: function abrupt(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+      finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
+      var record = finallyEntry ? finallyEntry.completion : {};
+      return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
+    },
+    complete: function complete(record, afterLoc) {
+      if ("throw" === record.type) throw record.arg;
+      return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
+    },
+    finish: function finish(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
+      }
+    },
+    "catch": function _catch(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if ("throw" === record.type) {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+      throw new Error("illegal catch attempt");
+    },
+    delegateYield: function delegateYield(iterable, resultName, nextLoc) {
+      return this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
+    }
+  }, exports;
+}
+module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 260:
+/*!******************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _en = _interopRequireDefault(__webpack_require__(/*! ./en.json */ 261));
+var _zhHans = _interopRequireDefault(__webpack_require__(/*! ./zh-Hans.json */ 262));
+var _zhHant = _interopRequireDefault(__webpack_require__(/*! ./zh-Hant.json */ 263));
+var _default = {
+  en: _en.default,
+  'zh-Hans': _zhHans.default,
+  'zh-Hant': _zhHant.default
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ 261:
+/*!*****************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json ***!
+  \*****************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"Pull up to show more\",\"uni-load-more.contentrefresh\":\"loading...\",\"uni-load-more.contentnomore\":\"No more data\"}");
+
+/***/ }),
+
+/***/ 262:
+/*!**********************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json ***!
+  \**********************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉显示更多\",\"uni-load-more.contentrefresh\":\"正在加载...\",\"uni-load-more.contentnomore\":\"没有更多数据了\"}");
+
+/***/ }),
+
+/***/ 263:
+/*!**********************************************************************************************!*\
+  !*** C:/Data/ZW/applet/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json ***!
+  \**********************************************************************************************/
+/*! exports provided: uni-load-more.contentdown, uni-load-more.contentrefresh, uni-load-more.contentnomore, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"uni-load-more.contentdown\":\"上拉顯示更多\",\"uni-load-more.contentrefresh\":\"正在加載...\",\"uni-load-more.contentnomore\":\"沒有更多數據了\"}");
+
+/***/ }),
+
+/***/ 27:
+/*!*****************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+  if (info.done) {
+    resolve(value);
+  } else {
+    Promise.resolve(value).then(_next, _throw);
+  }
+}
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+      args = arguments;
+    return new Promise(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+      _next(undefined);
+    });
+  };
+}
+module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 271:
 /*!************************************************************************************************!*\
   !*** C:/Data/ZW/applet/uni_modules/uni-datetime-picker/components/uni-datetime-picker/util.js ***!
   \************************************************************************************************/
@@ -19621,369 +19984,6 @@ exports.default = _default;
 
 /***/ }),
 
-/***/ 26:
-/*!*******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _typeof = __webpack_require__(/*! ./typeof.js */ 12)["default"];
-function _regeneratorRuntime() {
-  "use strict";
-
-  /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
-  module.exports = _regeneratorRuntime = function _regeneratorRuntime() {
-    return exports;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  var exports = {},
-    Op = Object.prototype,
-    hasOwn = Op.hasOwnProperty,
-    defineProperty = Object.defineProperty || function (obj, key, desc) {
-      obj[key] = desc.value;
-    },
-    $Symbol = "function" == typeof Symbol ? Symbol : {},
-    iteratorSymbol = $Symbol.iterator || "@@iterator",
-    asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator",
-    toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
-  function define(obj, key, value) {
-    return Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: !0,
-      configurable: !0,
-      writable: !0
-    }), obj[key];
-  }
-  try {
-    define({}, "");
-  } catch (err) {
-    define = function define(obj, key, value) {
-      return obj[key] = value;
-    };
-  }
-  function wrap(innerFn, outerFn, self, tryLocsList) {
-    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator,
-      generator = Object.create(protoGenerator.prototype),
-      context = new Context(tryLocsList || []);
-    return defineProperty(generator, "_invoke", {
-      value: makeInvokeMethod(innerFn, self, context)
-    }), generator;
-  }
-  function tryCatch(fn, obj, arg) {
-    try {
-      return {
-        type: "normal",
-        arg: fn.call(obj, arg)
-      };
-    } catch (err) {
-      return {
-        type: "throw",
-        arg: err
-      };
-    }
-  }
-  exports.wrap = wrap;
-  var ContinueSentinel = {};
-  function Generator() {}
-  function GeneratorFunction() {}
-  function GeneratorFunctionPrototype() {}
-  var IteratorPrototype = {};
-  define(IteratorPrototype, iteratorSymbol, function () {
-    return this;
-  });
-  var getProto = Object.getPrototypeOf,
-    NativeIteratorPrototype = getProto && getProto(getProto(values([])));
-  NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype);
-  var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype);
-  function defineIteratorMethods(prototype) {
-    ["next", "throw", "return"].forEach(function (method) {
-      define(prototype, method, function (arg) {
-        return this._invoke(method, arg);
-      });
-    });
-  }
-  function AsyncIterator(generator, PromiseImpl) {
-    function invoke(method, arg, resolve, reject) {
-      var record = tryCatch(generator[method], generator, arg);
-      if ("throw" !== record.type) {
-        var result = record.arg,
-          value = result.value;
-        return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) {
-          invoke("next", value, resolve, reject);
-        }, function (err) {
-          invoke("throw", err, resolve, reject);
-        }) : PromiseImpl.resolve(value).then(function (unwrapped) {
-          result.value = unwrapped, resolve(result);
-        }, function (error) {
-          return invoke("throw", error, resolve, reject);
-        });
-      }
-      reject(record.arg);
-    }
-    var previousPromise;
-    defineProperty(this, "_invoke", {
-      value: function value(method, arg) {
-        function callInvokeWithMethodAndArg() {
-          return new PromiseImpl(function (resolve, reject) {
-            invoke(method, arg, resolve, reject);
-          });
-        }
-        return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg();
-      }
-    });
-  }
-  function makeInvokeMethod(innerFn, self, context) {
-    var state = "suspendedStart";
-    return function (method, arg) {
-      if ("executing" === state) throw new Error("Generator is already running");
-      if ("completed" === state) {
-        if ("throw" === method) throw arg;
-        return doneResult();
-      }
-      for (context.method = method, context.arg = arg;;) {
-        var delegate = context.delegate;
-        if (delegate) {
-          var delegateResult = maybeInvokeDelegate(delegate, context);
-          if (delegateResult) {
-            if (delegateResult === ContinueSentinel) continue;
-            return delegateResult;
-          }
-        }
-        if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) {
-          if ("suspendedStart" === state) throw state = "completed", context.arg;
-          context.dispatchException(context.arg);
-        } else "return" === context.method && context.abrupt("return", context.arg);
-        state = "executing";
-        var record = tryCatch(innerFn, self, context);
-        if ("normal" === record.type) {
-          if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue;
-          return {
-            value: record.arg,
-            done: context.done
-          };
-        }
-        "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg);
-      }
-    };
-  }
-  function maybeInvokeDelegate(delegate, context) {
-    var methodName = context.method,
-      method = delegate.iterator[methodName];
-    if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel;
-    var record = tryCatch(method, delegate.iterator, context.arg);
-    if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel;
-    var info = record.arg;
-    return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel);
-  }
-  function pushTryEntry(locs) {
-    var entry = {
-      tryLoc: locs[0]
-    };
-    1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry);
-  }
-  function resetTryEntry(entry) {
-    var record = entry.completion || {};
-    record.type = "normal", delete record.arg, entry.completion = record;
-  }
-  function Context(tryLocsList) {
-    this.tryEntries = [{
-      tryLoc: "root"
-    }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0);
-  }
-  function values(iterable) {
-    if (iterable) {
-      var iteratorMethod = iterable[iteratorSymbol];
-      if (iteratorMethod) return iteratorMethod.call(iterable);
-      if ("function" == typeof iterable.next) return iterable;
-      if (!isNaN(iterable.length)) {
-        var i = -1,
-          next = function next() {
-            for (; ++i < iterable.length;) {
-              if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next;
-            }
-            return next.value = undefined, next.done = !0, next;
-          };
-        return next.next = next;
-      }
-    }
-    return {
-      next: doneResult
-    };
-  }
-  function doneResult() {
-    return {
-      value: undefined,
-      done: !0
-    };
-  }
-  return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", {
-    value: GeneratorFunctionPrototype,
-    configurable: !0
-  }), defineProperty(GeneratorFunctionPrototype, "constructor", {
-    value: GeneratorFunction,
-    configurable: !0
-  }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) {
-    var ctor = "function" == typeof genFun && genFun.constructor;
-    return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name));
-  }, exports.mark = function (genFun) {
-    return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun;
-  }, exports.awrap = function (arg) {
-    return {
-      __await: arg
-    };
-  }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () {
-    return this;
-  }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) {
-    void 0 === PromiseImpl && (PromiseImpl = Promise);
-    var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl);
-    return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) {
-      return result.done ? result.value : iter.next();
-    });
-  }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () {
-    return this;
-  }), define(Gp, "toString", function () {
-    return "[object Generator]";
-  }), exports.keys = function (val) {
-    var object = Object(val),
-      keys = [];
-    for (var key in object) {
-      keys.push(key);
-    }
-    return keys.reverse(), function next() {
-      for (; keys.length;) {
-        var key = keys.pop();
-        if (key in object) return next.value = key, next.done = !1, next;
-      }
-      return next.done = !0, next;
-    };
-  }, exports.values = values, Context.prototype = {
-    constructor: Context,
-    reset: function reset(skipTempReset) {
-      if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) {
-        "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined);
-      }
-    },
-    stop: function stop() {
-      this.done = !0;
-      var rootRecord = this.tryEntries[0].completion;
-      if ("throw" === rootRecord.type) throw rootRecord.arg;
-      return this.rval;
-    },
-    dispatchException: function dispatchException(exception) {
-      if (this.done) throw exception;
-      var context = this;
-      function handle(loc, caught) {
-        return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught;
-      }
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i],
-          record = entry.completion;
-        if ("root" === entry.tryLoc) return handle("end");
-        if (entry.tryLoc <= this.prev) {
-          var hasCatch = hasOwn.call(entry, "catchLoc"),
-            hasFinally = hasOwn.call(entry, "finallyLoc");
-          if (hasCatch && hasFinally) {
-            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
-            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
-          } else if (hasCatch) {
-            if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0);
-          } else {
-            if (!hasFinally) throw new Error("try statement without catch or finally");
-            if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc);
-          }
-        }
-      }
-    },
-    abrupt: function abrupt(type, arg) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) {
-          var finallyEntry = entry;
-          break;
-        }
-      }
-      finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null);
-      var record = finallyEntry ? finallyEntry.completion : {};
-      return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record);
-    },
-    complete: function complete(record, afterLoc) {
-      if ("throw" === record.type) throw record.arg;
-      return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel;
-    },
-    finish: function finish(finallyLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel;
-      }
-    },
-    "catch": function _catch(tryLoc) {
-      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
-        var entry = this.tryEntries[i];
-        if (entry.tryLoc === tryLoc) {
-          var record = entry.completion;
-          if ("throw" === record.type) {
-            var thrown = record.arg;
-            resetTryEntry(entry);
-          }
-          return thrown;
-        }
-      }
-      throw new Error("illegal catch attempt");
-    },
-    delegateYield: function delegateYield(iterable, resultName, nextLoc) {
-      return this.delegate = {
-        iterator: values(iterable),
-        resultName: resultName,
-        nextLoc: nextLoc
-      }, "next" === this.method && (this.arg = undefined), ContinueSentinel;
-    }
-  }, exports;
-}
-module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 27:
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-  try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
-  }
-  if (info.done) {
-    resolve(value);
-  } else {
-    Promise.resolve(value).then(_next, _throw);
-  }
-}
-function _asyncToGenerator(fn) {
-  return function () {
-    var self = this,
-      args = arguments;
-    return new Promise(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-      }
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-      }
-      _next(undefined);
-    });
-  };
-}
-module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
 /***/ 28:
 /*!************************************!*\
   !*** C:/Data/ZW/applet/pages.json ***!
@@ -20284,7 +20284,7 @@ module.exports = _arrayWithHoles, module.exports.__esModule = true, module.expor
 
 /***/ }),
 
-/***/ 50:
+/***/ 58:
 /*!******************************************!*\
   !*** C:/Data/ZW/applet/common/global.js ***!
   \******************************************/

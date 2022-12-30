@@ -1,0 +1,57 @@
+spring:
+  profiles:
+    active: dev
+    include: commonTest,service
+  #    include: commonDev,service
+
+  #  ??redis
+  redis:
+    database: 0
+    host: 121.4.79.246
+    port: 6379
+    password: Shadow99!
+    connect-timeout: 1800000  # ????
+    lettuce:
+      pool:
+        max-active: 8     # ????????
+        max-wait: -1    # ????????
+        max-idle: 8     # ??????????
+        min-idle: 0     # ??????????
+  cache:
+    cache-names: redis
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+# 微信小程序配置
+weixin:
+  appid: wx5a452aad0d506b62
+  secret: 87453da45121946ae1a37d72fb617822
+
+# 日志配置
+logging:
+  level:
+    root: info
+  pattern:
+    console: "%d %clr(%5p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+    file: "%d %clr(%5p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+#  file:
+#    name: server.log
+#    path: "C:/Data/ZW/xinyou/log"
+#  logback:
+#    rollingpolicy:
+#      max-file-size: 10MB
+#      file-name-pattern: server-%d{yyyy-MM-dd}.%i.log
+
+
+
+
+
+
+
+
