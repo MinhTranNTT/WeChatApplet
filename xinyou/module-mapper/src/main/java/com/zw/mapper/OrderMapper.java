@@ -31,6 +31,9 @@ public interface OrderMapper extends BaseMapper<Order> {
 
     // 根据订单状态获取订单列表
     List<Order> getByStatus(@Param("status") Integer status);
+
+    // 根据订单支付时间顺序获取订单列表
+    List<Order> getAllOrderByPayTimeDesc();
 }
 
 

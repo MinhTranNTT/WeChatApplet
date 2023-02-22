@@ -1,7 +1,7 @@
 spring:
   profiles:
     active: dev
-    include: commonTest,service
+    include: commonUbunDev,service
   #    include: commonDev,service
 
   #  ??redis
@@ -24,8 +24,8 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
 # 微信小程序配置

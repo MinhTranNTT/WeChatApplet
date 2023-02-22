@@ -3,8 +3,12 @@ package com.zw.backstage.config;
 
 import com.zw.backstage.interceptor.AuthorizationInterceptor;
 import com.zw.common.utils.UploadFile;
+import org.apache.catalina.filters.CorsFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -17,6 +21,17 @@ public class WebConfig extends WebMvcConfigurationSupport {
     // 注册拦截器
     @Autowired
     private AuthorizationInterceptor authorizationInterceptor;
+
+    // 解决跨域问题
+    @Override
+    protected void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowCredentials(true)
+                .allowedOriginPatterns("*")
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                .allowedHeaders("*")
+                .exposedHeaders("*");
+    }
 
     // 静态资源映射
     @Override

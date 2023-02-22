@@ -116,5 +116,11 @@
         openid = #{openid,jdbcType=VARCHAR}
         order by create_time desc
     </select>
+    <select id="getAllOrderByPayTimeDesc" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_order
+        order by pay_time desc
+    </select>
 
 </mapper>

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("/user/file")
-public class FIleContriller {
+public class FIleController {
     @Autowired
     UploadFile uploadFile;
 

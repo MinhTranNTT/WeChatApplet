@@ -101,7 +101,7 @@ public class UploadFile {
         String parent = this.fi_p;
 //        FileUpload fu = new FileUpload();
 //        String parent =fu.getFi_p();
-        System.out.println(parent+Path);
+//        System.out.println(parent+Path);
         // 保存图片的文件夹
         File dir = new File(parent+Path);
         if (!dir.exists()){
