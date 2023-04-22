@@ -18,6 +18,22 @@ spring:
       auto-commit: true
       validation-timeout: 1000
 
+  #  ??redis
+  redis:
+    database: 0
+    host: 121.4.79.246
+    port: 6379
+    password: Shadow99!
+    connect-timeout: 1800000  # ????
+    lettuce:
+      pool:
+        max-active: 8     # ????????
+        max-wait: -1    # ????????
+        max-idle: 8     # ??????????
+        min-idle: 0     # ??????????
+  cache:
+    cache-names: redis
+
   servlet:
     multipart:
       file-size-threshold: 100MB

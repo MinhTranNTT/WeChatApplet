@@ -1,7 +1,8 @@
 # 数据文件夹以及访问数据文件夹的路径
 file:
   root_dir: "C:/Users/aking/Desktop/xinyou/"
-  host_path: "http://localhost/file"
+#  host_path: "http://localhost/file"
+  host_path: "https://www.zl21.club:8081/file"
   image_path: "C:/Users/aking/Desktop/xinyou/images/"
 
 # JWT 配置:

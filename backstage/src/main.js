@@ -12,7 +12,8 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 // axios引入
 import axios from 'axios'
-axios.defaults.baseURL = 'http://localhost:8081'
+// axios.defaults.baseURL = 'http://localhost:8081'
+axios.defaults.baseURL = 'https://www.xinyouyanxue.com/backstageEnd'
 // axios.defaults.headers.post['Authorization'] = localStorage.getItem('token');
 axios.defaults.headers['Authorization'] = localStorage.getItem('token');
 // 全局注册axios

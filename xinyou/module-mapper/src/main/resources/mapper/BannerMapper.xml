@@ -5,26 +5,27 @@
 <mapper namespace="com.zw.mapper.BannerMapper">
 
     <resultMap id="BaseResultMap" type="com.zw.common.domain.Banner">
-            <id property="id" column="id" jdbcType="BIGINT"/>
-            <result property="title" column="title" jdbcType="VARCHAR"/>
-            <result property="url" column="url" jdbcType="VARCHAR"/>
-            <result property="status" column="status" jdbcType="TINYINT"/>
-            <result property="productId" column="product_id" jdbcType="INTEGER"/>
-            <result property="creator" column="creator" jdbcType="VARCHAR"/>
-            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
-            <result property="updater" column="updater" jdbcType="VARCHAR"/>
-            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
-            <result property="deleted" column="deleted" jdbcType="BIT"/>
-            <result property="tenantId" column="tenant_id" jdbcType="BIGINT"/>
-            <result property="sort" column="sort" jdbcType="TINYINT"/>
-            <result property="memo" column="memo" jdbcType="VARCHAR"/>
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="url" column="url" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="TINYINT"/>
+        <result property="productId" column="product_id" jdbcType="INTEGER"/>
+        <result property="sort" column="sort" jdbcType="TINYINT"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,title,url,
-        status,product_id,creator,
-        create_time,updater,update_time,
-        deleted,tenant_id,sort,
-        memo
+        id,url,status,
+        product_id,sort
     </sql>
+    <select id="getBannerListBySort" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_banner
+        order by sort
+    </select>
+    <select id="getBannerListByProductId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from mall_banner
+        where product_id = #{productId}
+    </select>
 </mapper>

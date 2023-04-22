@@ -20,7 +20,7 @@ public class FIleController {
     @PostMapping("/upload")
     public String upload(@RequestParam("file")MultipartFile file, HttpServletRequest request){
         String openid = request.getAttribute("openid").toString();
-        String path ="/"+openid.substring(0,7);
+        String path ="/"+openid.substring(0,9);
         String url = uploadFile.saveFile(file,path);
         return url;
     }

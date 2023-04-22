@@ -1,13 +1,14 @@
 server:
   port: 8083
+  servlet:
+      context-path: /miniBackend
 
 spring:
   datasource:
-    url: jdbc:mysql://121.4.79.246:3306/db_mall?serverTimezone=GMT%2B8
-#    url: jdbc:mysql://localhost:3306/db_mall?serverTimezone=GTM%2B8
+    url: jdbc:mysql://localhost:3306/db_mall?serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Shadow99!
+    password: xinyouMySQL99!
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       connection-timeout: 10000
@@ -22,10 +23,9 @@ spring:
   #  ??redis
   redis:
     database: 0
-    host: 121.4.79.246
-#    host: localhost
+    host: localhost
     port: 6379
-    password: Shadow99!
+    password: xinyouRedis99!
     connect-timeout: 1800000  # ????
     lettuce:
       pool:
@@ -51,5 +51,5 @@ wx:
     mchKey: xinyouyanxuezhongxincaiyichao001
     keyPath: classpath:/cert/apiclient_cert.p12
     tradeType: JSAPI
-    notifyUrl: https://www.zl21.club:8081/user/wxPay/notify
-    refundUrl: https://www.zl21.club:8081/user/wxRefund/refundNotify
+    notifyUrl: https://www.xinyouyanxue.com/miniBackend/user/wxPay/notify
+    refundUrl: https://www.xinyouyanxue.com/miniBackend/user/wxRefund/refundNotify

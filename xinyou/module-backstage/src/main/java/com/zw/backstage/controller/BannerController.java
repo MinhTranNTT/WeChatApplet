@@ -1,9 +1,11 @@
 package com.zw.backstage.controller;
 
+import com.zw.common.domain.Banner;
 import com.zw.common.domain.Batch;
 import com.zw.common.utils.JsonResult;
 import com.zw.common.utils.annotation.Authorize;
-import com.zw.service.BatchService;
+import com.zw.mapper.BannerMapper;
+import com.zw.service.BannerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,42 +13,45 @@ import javax.cache.annotation.CacheRemoveAll;
 import java.util.List;
 
 @RestController
-@RequestMapping("/batch")
-public class BatchController {
+@RequestMapping("/banner")
+public class BannerController {
     @Autowired
-    private BatchService batchService;
+    BannerService bannerService;
 
-    // 获取批次列表
+    @Autowired
+    BannerMapper bannerMapper;
+
+    //获取 Banner 列表
     @Authorize
     @GetMapping("/list")
     public JsonResult<List<Batch>> getAllBatch(){
-        return new JsonResult(200,batchService.list());
+        return new JsonResult(200,bannerMapper.getBannerListBySort());
     }
 
-    // 根据id删除批次
+    // 根据id删除banner
     @Authorize
     @DeleteMapping("/delete/{id}")
     @CacheRemoveAll(cacheName = "products")
     public JsonResult<Void> delete(@PathVariable("id") Integer id){
-        batchService.removeById(id);
+        bannerService.removeById(id);
         return new JsonResult<>(200);
     }
 
-    // 根据id修改批次
+    // 根据id修改banner
     @Authorize
     @PutMapping("/update")
     @CacheRemoveAll(cacheName = "products")
-    public JsonResult<Void> update(@RequestBody Batch batch){
-        batchService.updateById(batch);
+    public JsonResult<Void> update(@RequestBody Banner banner){
+        bannerService.updateById(banner);
         return new JsonResult<>(200);
     }
 
-    // 添加批次
+    // 添加banner
     @Authorize
     @PostMapping("/add")
     @CacheRemoveAll(cacheName = "products")
-    public JsonResult<Void> add(@RequestBody Batch batch){
-        batchService.save(batch);
+    public JsonResult<Void> add(@RequestBody Banner banner){
+        bannerService.save(banner);
         return new JsonResult<>(200);
     }
 }

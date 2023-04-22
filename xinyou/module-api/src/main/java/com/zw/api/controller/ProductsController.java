@@ -2,6 +2,7 @@ package com.zw.api.controller;
 
 import com.zw.common.domain.Products;
 import com.zw.common.utils.JsonResult;
+import com.zw.mapper.BannerMapper;
 import com.zw.mapper.ProductsMapper;
 import com.zw.service.ProductsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,9 @@ public class ProductsController {
     ProductsService productsService;
     @Autowired
     ProductsMapper productsMapper;
+    @Autowired
+    BannerMapper bannerMapper;
+
     //获取所有商品
     @GetMapping("/list")
     public JsonResult<List<Products>> getAll(){
@@ -38,6 +42,11 @@ public class ProductsController {
     // 删除商品
     @DeleteMapping("/delete/{id}")
     public JsonResult<Boolean> deleteProduct(@PathVariable Integer id){
+        //根据商品id在banner表中查找是否有该商品的banner，如果有则删除
+        bannerMapper.getBannerListByProductId(id).forEach(banner -> {
+            bannerMapper.deleteById(banner.getId());
+        });
+
         return new JsonResult(200, productsService.removeById(id));
     }
     //根据商品id获取单个商品

@@ -12,7 +12,9 @@ import com.github.binarywang.wxpay.service.WxPayService;
 import com.github.binarywang.wxpay.service.impl.WxPayServiceImpl;
 import com.github.binarywang.wxpay.util.SignUtils;
 import com.zw.api.config.WeChatPayConfig;
+import com.zw.common.domain.Banner;
 import com.zw.common.domain.Batch;
+import com.zw.mapper.BannerMapper;
 import com.zw.service.BatchService;
 import com.zw.service.RedisService;
 import org.junit.jupiter.api.Test;
@@ -22,13 +24,17 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 import java.net.InetAddress;
 import java.security.SecureRandom;
-import java.util.Base64;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @SpringBootTest(classes = com.zw.api.ApiApplication.class)
 public class ApiTest {
+    @Autowired
+    BannerMapper bannerMapper;
+//    @Test
+//    void sqltest(){
+//        List<Banner> bannerListByProductId = bannerMapper.getBannerListByProductId(1);
+//        System.out.println(bannerListByProductId);
+//    }
     @Test
     void urlTest() {
         String url = "http://localhost/file/oMrPf5P/b2b350ae-e14b-4047-97db-c14fa9da738f.jpg";

@@ -133,7 +133,8 @@ const productInfo = reactive({
   productPoster: '',
   departureMeetingPoint: [],
   returnMeetingPoint: [],
-  productsOrder: ''
+  productsOrder: '',
+  isActivate:1
 })
 // 商品类别
 const categoryList = reactive([])

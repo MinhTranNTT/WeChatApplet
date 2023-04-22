@@ -68,7 +68,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
             user.setRegisterTime(new Date()); // 设置注册时间
             userMapper.insert(user);
             // 创建新人优惠券
-            couponService.createNewerCoupon(openid);
+//            couponService.createNewerCoupon(openid);
         }else {
             // 存在，更新用户登录时间
             Date lastRegisterTime = userMapper.getRegisterTimeByOpenid(openid);

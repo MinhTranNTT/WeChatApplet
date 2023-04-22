@@ -149,7 +149,8 @@ const findOrder = () =>{
         }
       }
     }else{
-      orderFormList = orderList;
+      // orderFormList = orderList;
+      orderFormList.push(...orderList)
     }
   }else{
     findOrderByStatus(findForm.status)
